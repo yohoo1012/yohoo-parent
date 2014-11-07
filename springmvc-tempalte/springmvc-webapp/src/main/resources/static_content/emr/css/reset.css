@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,textarea,th,td,select {
+	margin: 0; padding: 0; font-family: "Microsoft YaHei","微软雅黑",Helvetica,Tahoma,Arial,STXihei,"华文细黑",SimSun,"宋体",Heiti,"黑体",sans-serif
+}
+
+img {
+	border: none; vertical-align: top;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+em {
+	font-style: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+input,textarea,a {
+	outline: none;
+}
+
+textarea {
+	resize: none; overflow: auto;
+}
+
+/*public*/
+.clear {
+	zoom: 1;
+}
+
+.clear:after {
+	content: ''; display: block; clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.loading {
+	padding:40px;color:#a0a0a0;font-size: 20px;font-weight: bold;background: #fff url("../img/ajax-loader-big.gif") 0 center no-repeat;
+}
+
+/* API */
+
+.transp {
+	filter: alpha(opacity = 50); -moz-opacity: 0.5; -webkit-opacity: 0.5; opacity: 0.5;
+}
+
+.border-r {
+	border-radius: 5px;
+}
+
+.box-shadow {
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.text-shadow {
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+.grad-b-t {
+    background: -webkit-linear-gradient(0deg, red, blue); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(0deg, red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(0deg, red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(0deg, red, blue); /* 标准的语法（必须放在最后） */
+}
+
+.grad-l-r {
+    background: -webkit-linear-gradient(90deg, red, blue); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(90deg, red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(90deg, red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(90deg, red, blue); /* 标准的语法（必须放在最后） */
+}
+
+.grad-t-b {
+    background: -webkit-linear-gradient(180deg, red, blue); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(180deg, red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(180deg, red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(180deg, red, blue); /* 标准的语法（必须放在最后） */
+}
+
+.grad-r-l {
+    background: -webkit-linear-gradient(-90deg, red, blue); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(-90deg, red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(-90deg, red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(-90deg, red, blue); /* 标准的语法（必须放在最后） */
+}

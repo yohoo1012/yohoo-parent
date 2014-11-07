@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GIS 共享平台</title>
+<link rel="stylesheet" href="css/reset.css">
+<script type="text/javascript" src="../libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/angularjs/1.2.5/angular.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="../libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+<script type="text/javascript" src="../emr/js/hoo.js"></script>
+<style type="text/css">
+body {
+	min-width: 1024px;font-size: 13px;
+}
+
+#header {
+	background: url("img/header_bg.gif") repeat-x;
+}
+
+#header .wraper {
+	width: 1024px; height: 72px; margin: 0 auto;
+}
+
+#header h1 {
+	width: 228px; height: 72px; line-height: 72px; font-size: 34px; color: #ecfbff; float: left; padding-left: 50px; background: url("img/logo.gif") no-repeat 0 13px;
+}
+
+#header img {
+	float: right;
+}
+
+#nav {
+	width: 1024px; height: 26px; margin: 0 auto; border-top: solid 1px #b3d5f0; background: #b8e0ec;
+}
+
+#nav p {
+	height: 26px; background: #a5cce9; padding-left: 10; background: #a5cce9; padding-left: 10; color: #333;
+}
+
+#nav em {
+	float: left; height: 26px; line-height: 26px; margin: 0; padding: 0 10px;
+}
+
+#nav input {
+	float: right; height: 26px; border: none; background: none; margin: 0 12px; cursor: pointer;
+}
+
+#content {
+	width: 1024px; margin: 1px auto;
+}
+
+#content .slid {
+	width: 166px; border: solid 1px #48a3c0; border-top: solid 1px #1d8eb0; background: #21a2c9; padding: 10px 0 60px;
+}
+
+#content .slid a {
+	display: block; height: 22px; color: #fff; line-height: 22px;
+}
+
+#content .slid .active,#content .slid a:hover {
+	color: #c1c938; font-weight: bold;
+}
+
+#content .slid .title {
+	margin-left: 12px; padding-left: 12px; background: url("img/slid_li_bg.gif") no-repeat 0 -22px;
+}
+
+#content .slid ol li {
+	margin-left: 22px; padding-left: 12px; background: url("img/slid_li_bg.gif") no-repeat 0 -44px;
+}
+
+#content .main {
+	width: 842px; border: solid 1px #90b2be; padding: 5px 4px;
+}
+
+#content .pic-list {
+	width: 324px;
+}
+
+#content .pic-list img {
+	border: solid 1px #b7c9cd; margin: 6px 3px;
+}
+
+#content .detail {
+	width: 504px; margin: 6px 3px;
+}
+
+#content .detail h2 {
+	font-size: 14px; line-height: 14px; color: #006d94; padding-left: 16px;
+}
+
+#content .detail ul {
+	width: 502px; border: solid 1px #dadada;margin-top:6px;
+}
+
+#content .detail .th {
+	background: #e0e0e0;
+}
+
+#content .detail b {
+	display: block; float: left; text-align: center; margin-right: 1px; line-height: 24px;
+}
+
+#content .detail .col1 {
+	width: 62px;
+}
+
+#content .detail .col2 {
+	width: 108px;
+}
+
+#content .detail .col3 {
+	width: 114px;
+}
+
+#content .detail .col4 {
+	width: 94px;
+}
+
+#content .detail .col5 {
+	width: 120px; margin: 0;
+}
+#footer {
+	width: 1024px;margin: 0 auto;
+}
+</style>
+
+<script type="text/javascript">
+	$(function(){
+		//$("body").load("/ftl");
+		$("body").load("/jsp");
+	})
+</script>
+</head>
+<body>
+
+	<div id="header">
+		<div class="wraper">
+			<h1>GIS 共享平台</h1>
+			<img src="img/top_bg.jpg" />
+		</div>
+	</div>
+	<div id="nav">
+		<p>
+			<em>
+				当前用户:
+				<span>KEVEN</span>
+			</em>
+			<em>
+				角色:
+				<span>超级管理员</span>
+			</em>
+			<input type="button" value="报警监控" />
+			<input type="button" value="首页" />
+		</p>
+	</div>
+	<div id="content" class="clear">
+		<div class="slid fl">
+			<ul>
+				<li>
+					<a class="title active" href="#">服务管理</a>
+					<ol>
+						<li>
+							<a href="#">平台服务管理页面</a>
+						</li>
+						<li>
+							<a href="#">平台服务注册页面</a>
+						</li>
+						<li>
+							<a href="#">平台服务查询页面</a>
+						</li>
+						<li>
+							<a href="#">平台服务发布页面</a>
+						</li>
+						<li>
+							<a href="#">平台服务注销页面</a>
+						</li>
+						<li>
+							<a href="#">平台服务删除页面</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a class="title" href="#">权限管理</a>
+					<ol>
+						<li>
+							<a href="#">用户管理</a>
+						</li>
+						<li>
+							<a href="#">角色管理</a>
+						</li>
+						<li>
+							<a href="#">资源管理</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a class="title" href="#">监控管理</a>
+					<ol>
+						<li>
+							<a href="#">服务监控</a>
+						</li>
+						<li>
+							<a href="#">系统监控</a>
+						</li>
+						<li>
+							<a href="#">用户监控</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a class="title" href="#">日志管理</a>
+					<ol>
+						<li>
+							<a href="#">服务方访问日志</a>
+						</li>
+						<li>
+							<a href="#">系统日志</a>
+						</li>
+						<li>
+							<a href="#">监控日志</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a class="title" href="#">系统管理</a>
+					<ol>
+						<li>
+							<a href="#">监控配置</a>
+						</li>
+						<li>
+							<a href="#">邮件管理设置</a>
+						</li>
+						<li>
+							<a href="#">异常报警配置</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+		<div class="main fr">
+			<div class="pic-list fl">
+				<img alt="" src="img/1.gif" />
+				<img alt="" src="img/2.gif" />
+			</div>
+			<div class="detail fr">
+				<div>
+					<h2>待处理服务申请</h2>
+					<ul>
+						<li class="clear">
+							<b class="col1 th">审核</b>
+							<b class="col2 th">申请标题</b>
+							<b class="col3 th">服务名称</b>
+							<b class="col4 th">申请人</b>
+							<b class="col5 th">申请时间</b>
+						</li>
+						<li>
+							<b class="col1">审核</b>
+							<b class="col2">申请标题</b>
+							<b class="col3">服务名称</b>
+							<b class="col4">申请人</b>
+							<b class="col5">申请时间</b>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<p class="loading">正在加载数据, 请稍后...</p>
+	</div>
+
+</body>
+</html>

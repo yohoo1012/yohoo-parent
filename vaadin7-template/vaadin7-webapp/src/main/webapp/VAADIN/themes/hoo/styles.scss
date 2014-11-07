@@ -1,0 +1,26 @@
+
+@import "hoo-chameleon.css";
+@import "addons.scss";
+@import "hoo.scss";
+
+.hoo {
+	
+	@include addons;
+	
+	@include hoo;
+}
+
+
+/** 使用scss的方式编写css, 此种方式提供在hoo.scss中编写样式
+@import "../chameleon/chameleon.scss";
+@import "addons.scss";
+@import "hoo.scss";
+
+.hoo {
+	@include chameleon;
+	
+	@include addons;
+	
+	@include hoo;
+}
+*/

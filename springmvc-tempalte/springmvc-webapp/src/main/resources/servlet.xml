@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+	
+	<context:component-scan base-package="yo.hoo.webapp.controller" />
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" >
+		<property name="useDefaultSuffixPattern" value="false"></property>
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
+		<property name="webBindingInitializer">
+			<bean class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+				<property name="conversionService">
+					<bean class="yo.hoo.support.mvc.conversions.CustomConversionService"></bean>
+				</property>
+			</bean>
+		</property>
+		<property name="messageConverters">  
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+					<property name="objectMapper">
+						<bean class="yo.hoo.support.mvc.mappers.CustomObjectMapper"></bean>
+					</property>
+				</bean>
+            </list>
+        </property>  
+	</bean>
+	
+	<!-- FreeMarker配置文件 -->  
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">  
+        <property name="templateLoaderPath" value="/WEB-INF/ftl/"/>  
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="locale">zh_CN</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="classic_compatible">true</prop>
+                <prop key="template_update_delay">5</prop>
+                <prop key="auto_import">include/spring.ftl as spring</prop>
+            </props>  
+        </property>  
+    </bean>
+	
+	<!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 -->
+	<bean id="multipartResolver" class="yo.hoo.support.mvc.resolver.CommonsMultipartResolverExt">
+		<property name="defaultEncoding" value="UTF-8" />  
+        <!-- 指定所上传文件的总大小不能超过200KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->
+		<property name="maxUploadSize" value="200000000000" />
+	</bean>
+	
+	<!--
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"/>
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	</bean>
+	-->
+	
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 
+	<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="prefix" value="/" />
+		<property name="cache" value="true" />
+		<property name="suffix" value=".ftl" />
+		<property name="allowRequestOverride" value="true" />
+		<property name="exposeRequestAttributes" value="true"/>
+		<property name="exposeSessionAttributes" value="true"/>
+		<property name="exposeSpringMacroHelpers" value="true"/>
+		<property name="requestContextAttribute" value="request"/>
+		<property name="contentType" value="text/html; charset=utf-8"/>
+	</bean>
+	-->
+
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+			<map>
+				<entry key="html" value="text/html" />
+				<entry 	key="json" value="application/json" />
+			</map>
+		</property>
+		<property name="favorParameter" value="true" />
+		<property name="viewResolvers">
+			<list>
+				<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+					<property name="prefix" value="/" />
+					<property name="cache" value="true" />
+					<property name="allowRequestOverride" value="true" />
+					<property name="exposeRequestAttributes" value="true" />
+					<property name="exposeSessionAttributes" value="true" />
+					<property name="exposeSpringMacroHelpers" value="true" />
+					<property name="requestContextAttribute" value="request" />
+					<property name="contentType" value="text/html; charset=utf-8" />
+				</bean>
+				<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="prefix" value="/WEB-INF/views/"/>
+					<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+				</bean>
+			</list>
+		</property>
+		<property name="defaultContentType" value="text/html" />
+	</bean>
+	
+	<!-- 拦截器 -->
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/emr/**"/>
+			<mvc:exclude-mapping path="/libs/**"/>
+			<bean class="yo.hoo.webapp.interceptors.MyInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!-- i18n国际化-->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver" />
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="classpath:i18n/messages"/>
+		<property name="useCodeAsDefaultMessage" value="true"/>
+	</bean>
+	
+	 <!-- 异常处理器 -->
+ 	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">errorPage.html</prop>
+			</props>
+        </property>
+    </bean>
+	
+	<mvc:default-servlet-handler/>
+	
+	<mvc:resources mapping="/emr/**" location="classpath:static_content/emr/"/>
+	<mvc:resources mapping="/libs/**" location="classpath:static_content/libs/"/>
+</beans>

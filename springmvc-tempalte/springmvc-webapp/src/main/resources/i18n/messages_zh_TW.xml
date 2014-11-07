@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<comment>繁体中文</comment>
+
+	<entry key="title">示例</entry>
+	<entry key="language">繁体中文</entry>
+
+</properties>

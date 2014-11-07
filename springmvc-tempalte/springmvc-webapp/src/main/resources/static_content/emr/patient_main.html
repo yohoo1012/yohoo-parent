@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Html5 template</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/patient_main.css">
+<script type="text/javascript" src="../libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../libs/angularjs/1.2.5/angular.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="../libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+<script type="text/javascript" src="../emr/js/hoo.js"></script>
+<script type="text/javascript" src="../emr/js/patient_main_script.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".dropmenu").click(function() {
+			$(this).parent().find(".dropdown-list").toggle(200, function() {
+				var of = $(this);
+				var modeLayout = "<div style='position:absolute;top:0;bottom:0;left:0;right:0;background-color:#000;filter: alpha(opacity = 50); -moz-opacity: 0.5; -webkit-opacity: 0.5; opacity: 0.5;z-index:1000;'></div>";
+				$(modeLayout).appendTo($("body")).click(function() {
+					$(this).remove();
+					of.hide();
+				});
+			});
+		});
+		$(".menu").mouseover(function() {
+			$(this).find("ul").show();
+		});
+		$(".menu").mouseout(function() {
+			$(this).find("ul").hide();
+		});
+		$(".nav-bar li").click(function() {
+			$(".nav-bar li").removeClass("active");
+			$(this).addClass("active");
+		});
+		$("#content .patient-list .content li").click(function() {
+			$("#content .patient-list .content li").removeClass("active");
+			$(this).addClass("active");
+		});
+		$("#content .patient-info-panel .nav li").click(function() {
+			$("#content .patient-info-panel .nav li").removeClass("active");
+			$(this).addClass("active");
+		});
+		$("#content .patient-info-panel .nav a").click(function() {
+			var id = $(this).attr("data-target-id");
+			if (id) {
+				$("#content .patient-info-panel .extend-info .content").hide();
+				$("#" + id).slideDown(200);
+			} else {
+				$("#content .patient-info-panel .extend-info .content").show();
+			}
+		});
+		if (!$("#content .patient-info-panel .nav a").attr("data-target-id")) {
+			$("#content .patient-info-panel .extend-info .content").show();
+		}
+	});
+</script>
+</head>
+<body>
+	<div id="header">
+		<div class="wrap">
+			<ul class="user-info">
+				<li>
+					您好,
+					<a href="javascript:;">张浩</a>
+				</li>
+				<li>
+					<a href="javascript:;">退出</a>
+				</li>
+
+				<li>
+					<a id="showMailList" class="mail dropmenu" href="javascript:;">
+						<strong>
+							<span></span>
+						</strong>
+					</a>
+					<ul class="dropdown-list">
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="nav dropmenu" href="javascript:;">
+						<strong>
+							导航
+							<span></span>
+						</strong>
+					</a>
+					<ul class="dropdown-list">
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+						<li>
+							<a href="javascript:;">我有一只小毛驴...</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<h1>
+				<img src="img/title.jpg" alt="菲特电子病历系统" />
+			</h1>
+		</div>
+	</div>
+
+	<div id="nav">
+		<div class="wrap">
+			<ul>
+				<li class="menu active">
+					<a href="">病人入科</a>
+					<ul class="nav-list">
+						<li>
+							<a href="javascript:;">手动录入</a>
+						</li>
+						<li>
+							<a href="javascript:;">联网导入</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<a href="">病历查看</a>
+					<ul class="nav-list">
+						<li>
+							<a href="javascript:;">手动录入</a>
+						</li>
+						<li>
+							<a href="javascript:;">联网导入</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<a href="">日常交接班 </a>
+				</li>
+				<li class="menu">
+					<a href="">会诊管理 </a>
+				</li>
+				<li class="menu">
+					<a href="">文件上传 </a>
+				</li>
+				<li class="menu">
+					<a href="">医疗缺陷 </a>
+				</li>
+				<li class="menu">
+					<a href="">报卡证明 </a>
+				</li>
+				<li class="menu">
+					<a href="">申请审批</a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-list-bar"></div>
+	</div>
+
+	<div id="content" class="clear">
+		<div class="patient-list">
+			<ul class="nav-bar">
+				<li class="active">我的病人</li>
+				<li>科室病人</li>
+			</ul>
+			<div class="search-area">
+				<div class="wrap">
+					<input type="text" placeholder="搜索" />
+					<img src="img/search.png" title="搜索" />
+				</div>
+			</div>
+			<div class="content">
+				<ul>
+					<li class="active">
+						<h2 class="ils1"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+					<li>
+						<h2 class="ils2"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+					<li>
+						<h2 class="ils3"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+					<li>
+						<h2 class="ils3"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+					<li>
+						<h2 class="ils3"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+					<li>
+						<h2 class="ils3"></h2>
+						<strong>李嬷嬷 （36岁/1982年5月8日）</strong>
+						<p>603病房 3床 住院号:488192</p>
+						<p>入院时间:2014/05/01</p>
+						<p>责任医生:张浩</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="patient-info-panel">
+			<div class="base-info">
+				<h2>【病人基本信息】</h2>
+				<ul>
+					<li>
+						<strong>姓名</strong>
+						<span>李嬷嬷</span>
+					</li>
+					<li>
+						<strong>住院号</strong>
+						<span>564352</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="nav">
+				<!--
+				<li class="active">
+					<a href="#详情">详情</a>
+				</li>
+				<li>
+					<a href="#当前任务">当前任务</a>
+				</li>
+				<li>
+					<a href="#病历问题">病历问题</a>
+				</li>
+				<li>
+					<a href="#病历内容">病历内容</a>
+				</li>
+				<li>
+					<a href="#基本信息修改">基本信息修改</a>
+				</li>
+				<li>
+					<a href="#病历修改">病历修改</a>
+				</li>
+				-->
+				<!--
+				-->
+				<li class="active">
+					<a href="javascript:;" data-target-id="详情">详情</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-target-id="当前任务">当前任务</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-target-id="病历问题">病历问题</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-target-id="病历内容">病历内容</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-target-id="基本信息修改">基本信息修改</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-target-id="病历修改">病历修改</a>
+				</li>
+			</ul>
+			<div class="extend-info">
+				<div id="详情" class="content active">
+					<h2>
+						<span>详情</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+				<div id="当前任务" class="content">
+					<h2>
+						<span>当前任务</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+				<div id="病历问题" class="content">
+					<h2>
+						<span>病历问题</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+				<div id="病历内容" class="content">
+					<h2>
+						<span>病历内容</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+				<div id="基本信息修改" class="content">
+					<h2>
+						<span>基本信息修改</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+				<div id="病历修改" class="content">
+					<h2>
+						<span>病历修改</span>
+					</h2>
+					<ol>
+						<li>
+							<a href="javascript:;">入院记录应在患者入院24小时内提交</a>
+						</li>
+						<li>
+							<a href="javascript:;">住院满30天应有阶段小结</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次病程记录应在患者入院8小时内完成</a>
+						</li>
+						<li>
+							<a href="javascript:;">首次上级查房记录应在患者入院48小时内完成</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+
+</body>
+</html>
