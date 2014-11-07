@@ -312,22 +312,6 @@
 	display: inline;
 }
 
-/** sprite: verticals; sprite-image: url(common/img/vertical-sprites.png); sprite-layout: vertical */
-
-/** sprite: horizontals; sprite-image: url(common/img/horizontal-sprites.png); sprite-layout: horizontal */
-
-/** sprite: black-verticals; sprite-image: url(common/img/black-vertical-sprites.png); sprite-layout: vertical; sprite-matte-color: #1e2022 */
-
-/** sprite: black-horizontals; sprite-image: url(common/img/black-horizontal-sprites.png); sprite-layout: horizontal; sprite-matte-color: #1e2022 */
-
-/** sprite: buttons; sprite-image: url(button/img/button-sprites.png); sprite-layout: vertical */
-
-/** sprite: black-buttons; sprite-image: url(button/img/black-button-sprites.png); sprite-layout: vertical */
-
-.v-generated-body {
-	background: #f5f5f5;
-}
-
 .mytheme .v-widget {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -336,8 +320,8 @@
 	display: inline-block;
 	white-space: normal;
 	vertical-align: bottom;
-	font-size: 12px;
-	line-height: normal;
+	font-size: 22px;
+	line-height: 1.4;
 }
 
 .mytheme .v-absolutelayout-wrapper {
@@ -382,7 +366,7 @@
 
 .mytheme .v-accordion-item-caption .v-caption {
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .mytheme .v-accordion-item-open .v-accordion-item-caption .v-caption {
@@ -399,7 +383,7 @@
 }
 
 .mytheme .v-browserframe > span {
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .mytheme .v-button {
@@ -415,7 +399,7 @@
 	padding: 0.2em 1em;
 	color: inherit;
 	font: inherit;
-	font-size: 12px;
+	font-size: 22px;
 	line-height: normal;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -571,7 +555,7 @@
 .mytheme .v-caption {
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .mytheme .v-errorindicator {
@@ -1324,7 +1308,7 @@ body .mytheme.v-app .v-app-loading {
 }
 
 .v-ff .mytheme .v-scrollable {
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .v-ios.v-webkit .mytheme .v-scrollable {
@@ -2758,7 +2742,7 @@ body .mytheme.v-app .v-app-loading {
 }
 
 .mytheme .v-table-table {
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .mytheme .v-table-header td {
@@ -3206,7 +3190,7 @@ body .mytheme.v-app .v-app-loading {
 
 .mytheme .v-richtextarea .gwt-HTML {
 	height: 100%;
-	font-size: 12px;
+	font-size: 22px;
 }
 
 .mytheme .v-richtextarea .gwt-RichTextToolbar {
@@ -3714,1530 +3698,513 @@ body .mytheme.v-app .v-app-loading {
 	background: transparent url(../base/window/img/shadow/bottom-right.png);
 }
 
-.mytheme .v-accordion {
-	border: 1px solid #bebebe;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+.mytheme.v-app {
+	background: transparent;
+	overflow: hidden;
 }
 
-.mytheme .v-accordion-item {
-	background-color: #fff;
-}
-
-.mytheme .v-accordion-item-caption {
-	height: 19px;
-	background: #e4e4e4 repeat-x;
-	background-image: url(../reindeer/tabsheet/img/tabbar-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	font-size: 11px;
-	line-height: normal;
-	border-top: 1px solid #bebebe;
-	text-shadow: #fff 0 1px 0;
-}
-
-.mytheme .v-accordion-item-caption .v-caption {
-	font-size: 11px;
-}
-
-.mytheme .v-accordion-item-caption .v-captiontext {
-	vertical-align: baseline;
-}
-
-.mytheme .v-accordion-item-first .v-accordion-item-caption {
+.mytheme .v-ui {
+	margin-top: 0;
 	border-top: none;
 }
 
-.mytheme .v-accordion-item-caption .v-caption {
-	padding: 3px 0 0 10px;
+.mytheme .v-tooltip {
+	background: #fdfdee;
+	border: 1px solid #c0c0b9;
+	padding: 1px 5px;
+	color: #222;
+	font-size: 11.7px;
+	line-height: normal;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
 
-.mytheme .v-accordion-item-open .v-accordion-item-caption {
-	background-image: url(../reindeer/tabsheet/img/tabbar-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	border-bottom: 1px solid #bbb;
-}
-
-.mytheme .v-accordion-item-caption .v-icon {
-	margin-top: -3px;
-}
-
-.v-ie .mytheme .v-accordion-item-caption .v-icon, .v-ff .mytheme .v-accordion-item-caption .v-icon {
-	margin-top: -6px;
-}
-
-.mytheme .v-accordion-borderless {
-	border: none;
-	border-radius: 0;
+.v-sa .mytheme .v-tooltip {
+	outline: 1px solid rgba(0, 0, 0, 0.2);
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-}
-
-.mytheme .v-button:focus {
-	background-image: url(../reindeer/button/img/left-focus.png);/** sprite-ref: buttons */
-	outline: none;
-}
-
-.mytheme .v-button:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
-	outline: none;
-}
-
-.mytheme .v-button:active, .mytheme .v-button.v-pressed {
-	background-image: url(../reindeer/button/img/left-pressed.png);/** sprite-ref: buttons */
-	outline: none;
-}
-
-.mytheme .v-button:active .v-button-wrap, .mytheme .v-button.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
-	outline: none;
-}
-
-.mytheme .v-button, .mytheme .v-disabled.v-button {
-	height: 26px;
-	padding: 0 0 0 6px;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/button/img/left.png);/** sprite-ref: buttons */
 	border: none;
-	cursor: default;
 }
 
-.mytheme .v-button-wrap, .mytheme .v-disabled.v-button .v-button-wrap {
-	display: block;
-	height: 22px;
-	padding: 4px 15px 0 9px;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-image: url(../reindeer/button/img/right.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-caption {
-	color: #222;
-	text-shadow: #fff 0 1px 0;
-	font-weight: bold;
-	font-size: 11px;
-	line-height: 16px;
-}
-
-.mytheme .black .v-button:focus {
-	background-image: url(../reindeer/button/img/black/left-focus.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button:active, .mytheme .black .v-button.v-pressed {
-	background-image: url(../reindeer/button/img/black/left-pressed.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button:active .v-button-wrap, .mytheme .black .v-button.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button, .mytheme .black .v-disabled.v-button {
-	background-image: url(../reindeer/button/img/black/left.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-wrap, .mytheme .black .v-disabled.v-button .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button-caption {
-	color: #c9ccce;
-	text-shadow: #121314 0 -1px 0;
-}
-
-.mytheme .v-button-primary:focus {
-	background-image: url(../reindeer/button/img/primary-left-focus.png);/** sprite-ref: buttons */
-}
-
-.mytheme .v-button-primary:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/primary-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-primary:active, .mytheme .v-button-primary.v-pressed {
-	background-image: url(../reindeer/button/img/primary-left-pressed.png);/** sprite-ref: buttons */
-}
-
-.mytheme .v-button-primary:active .v-button-wrap, .mytheme .v-button-primary.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/primary-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-primary, .mytheme .v-disabled.v-button-primary {
-	background-image: url(../reindeer/button/img/primary-left.png);/** sprite-ref: buttons */
-}
-
-.mytheme .v-button-primary .v-button-wrap, .mytheme .v-disabled.v-button-primary .v-button-wrap {
-	background-image: url(../reindeer/button/img/primary-right.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button-primary:focus {
-	background-image: url(../reindeer/button/img/black/primary-left-focus.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-primary:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/primary-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-	color: #eaf4fb;
-}
-
-.mytheme .black .v-button-primary:active, .mytheme .black .v-button-primary.v-pressed {
-	background-image: url(../reindeer/button/img/black/primary-left-pressed.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-primary:active .v-button-wrap, .mytheme .black .v-button-primary.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/primary-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button-primary, .mytheme .black .v-disabled.v-button-primary {
-	background-image: url(../reindeer/button/img/black/primary-left.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-primary .v-button-wrap, .mytheme .black .v-disabled.v-button-primary .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/primary-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-small:focus {
-	background-image: url(../reindeer/button/img/small-left-focus.png);/** sprite-ref: buttons */
-}
-
-.mytheme .v-button-small:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/small-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-small:active, .mytheme .v-button-small.v-pressed {
-	background-image: url(../reindeer/button/img/small-left-pressed.png);/** sprite-ref: buttons */
-}
-
-.mytheme .v-button-small:active .v-button-wrap, .mytheme .v-button-small.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/small-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button-small, .mytheme .v-disabled.v-button-small {
-	background-image: url(../reindeer/button/img/small-left.png);/** sprite-ref: buttons */
-	height: 20px;
-}
-
-.mytheme .v-button-small .v-button-wrap, .mytheme .v-disabled.v-button-small .v-button-wrap {
-	background-image: url(../reindeer/button/img/small-right.png);/** sprite-ref: buttons; sprite-alignment: right */
-	height: 19px;
-	padding: 1px 14px 0 8px;
-}
-
-.mytheme .v-button-small .v-button-caption {
-	font-weight: normal;
-}
-
-.mytheme .black .v-button-small:focus {
-	background-image: url(../reindeer/button/img/black/small-left-focus.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-small:focus .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/small-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button-small:active, .mytheme .black .v-button-small.v-pressed {
-	background-image: url(../reindeer/button/img/black/small-left-pressed.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-small:active .v-button-wrap, .mytheme .black .v-button-small.v-pressed .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/small-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .black .v-button-small, .mytheme .black .v-disabled.v-button-small {
-	background-image: url(../reindeer/button/img/black/small-left.png);/** sprite-ref: black-buttons */
-}
-
-.mytheme .black .v-button-small .v-button-wrap, .mytheme .black .v-disabled.v-button-small .v-button-wrap {
-	background-image: url(../reindeer/button/img/black/small-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
-}
-
-.mytheme .v-button.v-button-link, .mytheme .v-button.v-button-link:focus, .mytheme .v-button.v-button-link:active, .mytheme .v-button-link.v-pressed, .mytheme .v-disabled.v-button.v-button-link, .mytheme .v-button.v-button-link .v-button-wrap, .mytheme .v-button.v-button-link:focus .v-button-wrap, .mytheme .v-button.v-button-link:active .v-button-wrap, .mytheme .v-button-link.v-pressed .v-button-wrap, .mytheme .v-disabled.v-button.v-button-link .v-button-wrap {
-	background: transparent;
-	height: auto;
-	padding: 0;
-	cursor: pointer;
-	line-height: inherit;
-}
-
-.mytheme .v-button.v-button-link.v-disabled, .mytheme .v-button.v-button-link.v-disabled .v-button-wrap {
-	cursor: default;
-}
-
-.mytheme .v-button-link .v-button-caption {
-	line-height: inherit;
-	font-weight: normal;
-	color: #1b699f;
-	font-size: 12px;
-	text-shadow: none;
-}
-
-.mytheme .v-button-link:focus .v-button-caption {
-	outline: 1px dotted #1b699f;
-}
-
-.mytheme .v-nativebutton-link .v-nativebutton-caption {
-	line-height: inherit;
-	font-weight: normal;
-	color: #1b699f;
-	font-size: 12px;
-	text-shadow: none;
-}
-
-.mytheme .v-nativebutton-link:focus .v-nativebutton-caption {
-	outline: 1px dotted #1b699f;
-}
-
-.v-ie8 .mytheme .v-nativebutton-link {
-	padding: 0;
-	text-align: left;
-}
-
-.mytheme .v-colorpicker-popup {
-	width: 246px;
-}
-
-.mytheme .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
-	height: 284px;
-}
-
-.mytheme .v-colorpicker-popup .v-filterselect {
-	padding-right: 25px;
-}
-
-.mytheme.v-app {
-	background: #f5f5f5;
-}
-
-.mytheme.v-app, .mytheme .v-window, .mytheme .v-popupview-popup, .mytheme .v-tooltip, .mytheme.v-app input, .mytheme.v-app select, .mytheme.v-app button, .mytheme.v-app textarea, .mytheme .v-window input, .mytheme .v-window select, .mytheme .v-window button, .mytheme .v-window textarea, .mytheme .v-popupview-popup input, .mytheme .v-popupview-popup select, .mytheme .v-popupview-popup button, .mytheme .v-popupview-popup textarea, .mytheme .v-filterselect-suggestpopup, .mytheme .v-datefield-popup, .mytheme .v-contextmenu, .mytheme .v-Notification, .mytheme .v-menubar-submenu, .mytheme .v-drag-element, .mytheme .v-table-header-drag {
-	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
-	font-size: 12px;
-	line-height: normal;
-	color: #222;
-}
-
-.mytheme.v-app .black, .mytheme .v-window-black, .mytheme .v-window .black, .mytheme .v-popupview-popup .black {
-	color: #c9ccce;
-	text-shadow: #000 0 0 1px;
-}
-
-.mytheme .v-errorindicator {
-	width: 13px;
-	height: 15px;
-	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
-}
-
-.mytheme .v-tooltip {
-	background-color: #fffcdd;
-	border: 1px solid #b8b295;
-	font-size: 11px;
-	color: #222;
-}
-
-.mytheme .v-tooltip-text {
-	padding: 2px 4px;
-}
-
-.mytheme .v-tooltip .v-errormessage {
-	padding: 3px 4px;
-	background: #ffecc6;
-	color: #b74100;
-	border: none;
-	border-top: 1px solid #fff3dc;
-}
-
-.mytheme .v-tooltip .v-errormessage h2 {
-	font-size: 16px;
-	font-weight: normal;
-	color: #ab3101;
-	margin: 2px 0 8px 0;
-}
-
-.mytheme .v-tooltip .v-errormessage h3 {
+.mytheme.v-app, .mytheme .v-window, .mytheme .v-popupview-popup, .mytheme .v-tooltip, .mytheme.v-app input, .mytheme.v-app select, .mytheme.v-app button, .mytheme.v-app textarea, .mytheme .v-window input, .mytheme .v-window select, .mytheme .v-window button, .mytheme .v-window textarea, .mytheme .v-popupview-popup input, .mytheme .v-popupview-popup select, .mytheme .v-popupview-popup button, .mytheme .v-popupview-popup textarea, .mytheme .v-filterselect-suggestpopup, .mytheme .v-datefield-popup, .mytheme .v-contextmenu, .mytheme .v-Notification, .mytheme .v-menubar-submenu, .mytheme .v-table-header-drag, .mytheme .v-menubar-submenu, .mytheme .v-drag-element {
+	font-family: Arial, Helvetica, "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
 	font-size: 13px;
-	font-weight: bold;
-	margin: 1px 0 4px 0;
+	line-height: 1.4;
+	color: #222;
 }
 
-.mytheme .v-contextmenu {
-	background: #f8f8f9;
-	border: none;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
+.mytheme .v-window, .mytheme .v-popupview-popup, .mytheme .v-filterselect-suggestpopup, .mytheme .v-datefield-popup, .mytheme .v-contextmenu, .mytheme .v-Notification, .mytheme .v-menubar-submenu {
+	background: #fff url(../chameleon/img/grad-light-top.png) repeat-x;
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 1px solid #adadad;
+	border-color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 	overflow: hidden;
-	padding: 4px 0;
 }
 
-.mytheme .v-contextmenu .gwt-MenuItem {
-	padding: 1px 12px 1px 8px;
-	height: 16px;
+.mytheme .v-filterselect-suggestpopup, .mytheme .v-contextmenu, .mytheme .v-menubar-submenu {
+	padding: 3px 0;
+}
+
+.mytheme .v-contextmenu .gwt-MenuItem, .mytheme .v-filterselect-suggestpopup .gwt-MenuItem, .mytheme .v-menubar-submenu .v-menubar-menuitem {
+	padding: 0.05em 0.7em;
 	user-select: none;
-	-moz-user-select: none;
 	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	cursor: default;
 }
 
-.mytheme .v-contextmenu .gwt-MenuItem .v-icon {
-	margin-right: 3px;
+.mytheme .v-contextmenu td.gwt-MenuItem-selected div, .mytheme .v-filterselect-suggestpopup td.gwt-MenuItem-selected, .mytheme .v-table .v-table-body .v-selected, .mytheme .v-menubar-submenu span.v-menubar-menuitem-selected {
+	text-shadow: none;
 }
 
-.mytheme .v-contextmenu .gwt-MenuItem-selected {
-	background: transparent repeat-x;
-	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #fff;
-	text-shadow: #3b5a7a 0 1px 0;
-}
-
-.v-ie .mytheme .v-contextmenu .gwt-MenuItem-selected {
-	background-image: url(../reindeer/common/img/sel-bg.png);
-	background-position: left top;
+.mytheme .v-contextmenu .gwt-MenuItem-selected, .mytheme .v-filterselect-suggestpopup .gwt-MenuItem-selected, .mytheme .v-table .v-selected, .mytheme .v-menubar-submenu .v-menubar-menuitem-selected {
+	background-color: #333;
 }
 
 .mytheme .v-contextmenu .gwt-MenuItem-selected div {
 	background: transparent;
-	cursor: default;
 }
 
-.portlet .mytheme.v-app {
-	background: transparent;
+.mytheme .v-tooltip .v-errormessage {
+	color: #b2320b;
+	padding-left: 14px;
+	background: transparent url(../chameleon/img/error-indicator.png) no-repeat 0 50%;
 }
 
-.portlet .mytheme.v-app .v-radiobutton input, .mytheme .portlet .v-window .v-radiobutton input, .mytheme .portlet .v-popupview-popup .v-radiobutton input, .portlet .mytheme.v-app .v-checkbox input, .mytheme .portlet .v-window .v-checkbox input, .mytheme .portlet .v-popupview-popup .v-checkbox input {
-	margin-right: 3px;
-	background: transparent;
+.mytheme .v-errorindicator {
+	width: 13px;
+	height: 1.4em;
+	background: transparent url(../chameleon/img/error-indicator.png) no-repeat right 50%;
 }
 
-.mytheme .v-datefield {
-	overflow: hidden;
+.mytheme .v-caption-small .v-errorindicator {
+	height: 1.2em;
 }
 
-.mytheme input.v-textfield-readonly:focus {
+.mytheme .v-caption-big .v-errorindicator {
+	height: 1.8em;
+}
+
+.mytheme .v-accordion {
+	border: 1px solid #b3b3b3;
+}
+
+.mytheme .v-accordion-item-open {
+	border-bottom: 1px solid #b3b3be;
+}
+
+.mytheme .v-accordion-item-caption, .mytheme .v-accordion-item-open .v-accordion-item-caption:active {
+	padding: 0;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border-width: 0 0 1px 0;
+	border-style: solid none;
+}
+
+.mytheme div.v-accordion-item-caption, .mytheme div.v-accordion-item-open .v-accordion-item-caption:active {
 	background-color: transparent;
 }
 
-.mytheme .v-datefield-calendarpanel {
-	border-collapse: collapse;
-	margin: 0;
-	padding: 0;
-	height: auto !important;
+.mytheme .v-accordion-item-caption .v-caption {
+	padding: 0.2em 0.9em;
 }
 
-.mytheme .v-datefield-year .v-datefield-calendarpanel-prevmonth, .mytheme .v-datefield-year .v-datefield-calendarpanel-nextmonth {
-	display: none;
+.mytheme .v-accordion-item-caption:active {
+	background-image: url(../chameleon/img/grad-dark-bottom.png);
+	background-position: left bottom;
 }
 
-.mytheme .v-datefield-calendarpanel td {
-	vertical-align: top;
+.mytheme .v-accordion-opaque {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
 
-.mytheme td.v-datefield-calendarpanel-month {
-	height: 23px;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme span.v-datefield-calendarpanel-month {
-	display: block;
-	text-align: center;
-	height: 16px;
-	padding: 3px 10px 0 10px;
-	border-left: 1px solid #efefef;
-	border-right: 1px solid #d8d8d8;
-	text-shadow: #fff 0 1px 0;
-	overflow: hidden;
-	margin-top: 1px;
-}
-
-.mytheme .v-datefield-year .v-datefield-calendarpanel-month {
-	width: 35px;
-}
-
-.mytheme .v-datefield-month .v-datefield-calendarpanel-month, .mytheme .v-datefield-day .v-datefield-calendarpanel-month, .mytheme .v-datefield-full .v-datefield-calendarpanel-month {
-	width: 124px;
-}
-
-.mytheme .v-datefield-month, .mytheme .v-datefield-day, .mytheme .v-datefield-full {
-	min-width: 240px;
-}
-
-.mytheme .v-datefield-popupcalendar {
-	min-width: 0;
-	padding-right: 24px;
-}
-
-.mytheme .v-datefield-year .v-datefield-calendarpanel {
-	width: 100px;
-}
-
-.mytheme td.v-datefield-calendarpanel-prevyear {
-	text-align: right;
-}
-
-.mytheme td.v-datefield-calendarpanel-nextyear {
-	text-align: left;
-}
-
-.mytheme .v-datefield-calendarpanel-prevyear button, .mytheme .v-datefield-calendarpanel-nextyear button, .mytheme .v-datefield-calendarpanel-prevmonth button, .mytheme .v-datefield-calendarpanel-nextmonth button {
-	width: 24px;
-	height: 23px;
+.mytheme .v-accordion-opaque .v-accordion-item-caption, .mytheme .v-accordion-opaque .v-accordion-item-open {
 	border: none;
-	background: transparent;
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+}
+
+.mytheme .v-accordion-opaque .v-accordion-item-caption, .mytheme .v-accordion-opaque .v-accordion-item-open .v-accordion-item-caption:active {
+	background-color: #b8b8b8;
+}
+
+.mytheme .v-accordion-opaque .v-accordion-item-open {
+	background-color: #fff;
+}
+
+.mytheme .v-accordion-opaque .v-accordion-item-first, .mytheme .v-accordion-opaque .v-accordion-item-first .v-accordion-item-caption {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
 	overflow: hidden;
-	padding: 0;
-	text-indent: -9999px;
-	outline: none;
+}
+
+.mytheme .v-accordion-borderless {
+	border: none;
+}
+
+.mytheme .v-accordion-opaque.borderless, .mytheme .v-accordion-opaque.borderless .v-accordion-item-first .v-accordion-item-caption {
+	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-	border-radius: 0;
 }
 
-.v-ie .mytheme .v-datefield-calendarpanel-prevyear button, .v-ie .mytheme .v-datefield-calendarpanel-nextyear button, .v-ie .mytheme .v-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .v-datefield-calendarpanel-nextmonth button {
-	text-indent: 0;
-	font-size: 1px;
+.mytheme .v-button:active, .v-ie8 .mytheme .v-pressed.v-button, .mytheme div.v-button-down {
+	background-image: url(../chameleon/img/grad-dark-bottom2.png);
+	background-color: #afafaf;
 }
 
-.mytheme .v-datefield-calendarpanel-nextyear button {
-	background-position: left top;
-	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-datefield-calendarpanel-prevyear button:active, .v-ie .mytheme .v-datefield-calendarpanel-prevyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-datefield-calendarpanel-nextyear button:active, .v-ie .mytheme .v-datefield-calendarpanel-nextyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-datefield-calendarpanel-prevmonth, .mytheme .v-datefield-calendarpanel-nextmonth {
-	width: 24px;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-datefield-calendarpanel-prevmonth button, .mytheme .v-datefield-calendarpanel-nextmonth button {
-	width: 100%;
-	height: 21px;
-	border-left: 1px solid #efefef;
-	border-right: 1px solid #d8d8d8;
-	background: transparent;
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
-	min-width: 24px;
-	margin-top: 1px;
-}
-
-.v-ie .mytheme .v-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .v-datefield-calendarpanel-nextmonth button {
-	border: none;
-}
-
-.mytheme .v-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-datefield-calendarpanel-prevmonth button:active, .v-ie .mytheme .v-datefield-calendarpanel-prevmonth button.v-pressed {
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-datefield-calendarpanel-nextmonth button:active, .v-ie .mytheme .v-datefield-calendarpanel-nextmonth button.v-pressed {
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-datefield-calendarpanel-body, .mytheme .v-datefield-calendarpanel-time {
-	text-align: center;
-	vertical-align: top;
-}
-
-.mytheme .v-datefield-calendarpanel-body table {
-	border-collapse: collapse;
-	margin: 0;
-	padding: 0;
-	width: 220px;
-	margin: 0 auto;
-}
-
-.mytheme .v-datefield-calendarpanel-weekdays td {
-	width: 14.2%;
-	overflow: hidden;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
-	font-size: 10px;
-	line-height: normal;
-	text-transform: uppercase;
-	color: #eaeff1;
-	text-shadow: #3b4651 0 -1px 0;
-	vertical-align: top;
-	padding: 0;
-}
-
-.mytheme .v-datefield-calendarpanel-weeknumbers td {
-	width: 12.4%;
-}
-
-.mytheme .v-datefield-calendarpanel-weekdays strong {
-	display: block;
-	text-align: right;
-	padding: 1px 5px 0 0;
-	height: 14px;
-	border-top: 1px solid #596775;
-}
-
-.mytheme .v-datefield-calendarpanel-weekdays .v-first {
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
-}
-
-.mytheme .v-datefield-calendarpanel-weekdays .v-last {
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
-}
-
-.v-ie .mytheme .v-datefield-calendarpanel-weekdays td {
-	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
-	background-position: left top;
-}
-
-.v-ie .mytheme .v-datefield-calendarpanel .v-first {
-	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
-}
-
-.v-ie .mytheme .v-datefield-calendarpanel .v-last {
-	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
-}
-
-.mytheme .v-datefield-calendarpanel-body td {
-	text-align: right;
-	height: 19px;
-}
-
-.mytheme .v-datefield-calendarpanel-day, .mytheme .v-datefield-calendarpanel-weeknumber, .mytheme .v-datefield-calendarpanel-day-today {
-	padding: 2px 5px 2px 0;
-	display: block;
-	margin: 1px 0 0 5px;
-}
-
-.mytheme .v-datefield-calendarpanel-weeknumber {
-	margin: 0;
-	padding-top: 4px;
-	padding-bottom: 3px;
-	font-size: 10.8px;
-}
-
-.mytheme .v-datefield-calendarpanel-day-today {
-	color: #4095d1;
-	border: none;
-}
-
-.mytheme .v-datefield-calendarpanel-day-selected {
-	background: #507ba3;
-	color: #fff;
-	text-shadow: #3b5b79 0 1px 0;
+.mytheme .v-button:active .v-button-wrap, .v-ie8 .mytheme .v-pressed.v-button .v-button-wrap, .mytheme .v-button-down .v-button-wrap {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+	border: 1px solid #888;
+	padding: 3px 12px;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 }
 
-.mytheme .v-datefield-calendarpanel-time select {
-	padding: 0;
-	font-size: 11px;
-	margin: 2px;
+.mytheme div.v-button-down .v-button-wrap {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
 }
 
-.mytheme .v-datefield-popup {
-	background: #f8f8f9;
-	padding: 8px 4px;
+.mytheme .v-button {
+	overflow: hidden;
+}
+
+.mytheme .v-button, .mytheme .v-disabled.v-button:focus, .mytheme .v-disabled.v-button:active {
+	border: 1px solid #8b8b8b;
+	background: #c9c9c9;
 	border-radius: 3px;
+	background: #c9c9c9 url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-}
-
-.v-sa .mytheme .v-datefield-popup, .v-op .mytheme .v-datefield-popup {
-	background: rgba(255, 255, 255, 0.95);
-}
-
-.mytheme .v-datefield-year > .v-datefield-textfield {
-	width: 4.5em;
-}
-
-.mytheme .v-datefield-month > .v-datefield-textfield {
-	width: 5.5em;
-}
-
-.mytheme .v-datefield-day > .v-datefield-textfield {
-	width: 6em;
-}
-
-.mytheme .v-datefield-full > .v-datefield-textfield {
-	width: 12.5em;
-}
-
-.mytheme .v-datefield-popupcalendar input.v-datefield-textfield {
-	border-right-width: 0;
-	-moz-border-radius-topright: 0;
-	-moz-border-radius-bottomright: 0;
-	-webkit-border-top-right-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
-	height: 23px;
-}
-
-.mytheme .v-datefield.v-readonly input.v-datefield-textfield {
-	border-right-width: 1px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-}
-
-.mytheme .v-datefield-prompt .v-datefield-textfield {
-	color: #999;
-	font-style: normal;
-}
-
-.mytheme .v-datefield-popupcalendar .v-datefield-button {
-	width: 24px;
-	margin-right: -24px;
-	height: 23px;
-	background: transparent;
-	border: none;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	text-shadow: 0 1px 0 #fff;
 	padding: 0;
-	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
-	cursor: pointer;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
 }
 
-.mytheme .v-datefield-popupcalendar .v-datefield-button:active {
-	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .black .v-datefield-popupcalendar .v-datefield-button {
-	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-datefield-popupcalendar .v-datefield-button:active {
-	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black td.v-datefield-calendarpanel-month {
-	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-	height: 21px;
-}
-
-.mytheme .black span.v-datefield-calendarpanel-month {
-	border-left: 1px solid #333638;
-	border-right: 1px solid #232527;
-	color: #c9ccce;
-	text-shadow: #000 0 -1px 0;
-	padding: 4px 10px 1px 10px;
-	margin-top: 0;
-}
-
-.mytheme .black .v-datefield-calendarpanel-prevyear button, .mytheme .black .v-datefield-calendarpanel-nextyear button, .mytheme .black .v-datefield-calendarpanel-prevmonth button, .mytheme .black .v-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
-	height: 21px;
-}
-
-.mytheme .black .v-datefield-calendarpanel-nextyear button {
-	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-datefield-calendarpanel-prevyear button:active, .v-ie .mytheme .black .v-datefield-calendarpanel-prevyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-datefield-calendarpanel-nextyear button:active, .v-ie .mytheme .black .v-datefield-calendarpanel-nextyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-datefield-calendarpanel-prevmonth, .mytheme .black .v-datefield-calendarpanel-nextmonth {
-	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-}
-
-.mytheme .black .v-datefield-calendarpanel-prevmonth button, .mytheme .black .v-datefield-calendarpanel-nextmonth button {
-	border-left: 1px solid #333638;
-	border-right: 1px solid #232527;
-	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-	margin-top: 0;
-}
-
-.mytheme .black .v-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.mytheme .black .v-datefield-calendarpanel-prevmonth button:active, .v-ie .mytheme .black .v-datefield-calendarpanel-prevmonth button.v-pressed {
-	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.mytheme .black .v-datefield-calendarpanel-nextmonth button:active, .v-ie .mytheme .black .v-datefield-calendarpanel-nextmonth button.v-pressed {
-	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.v-ie .mytheme .black .v-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .black .v-datefield-calendarpanel-nextmonth button {
-	border: none;
-}
-
-.mytheme .black .v-datefield-calendarpanel-weekdays td {
-	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
-	color: #0a0b0b;
-	text-shadow: #5a5c5e 0 1px 0;
-}
-
-.mytheme .black .v-datefield-calendarpanel-weekdays strong {
-	border-top-color: #1b1c1d;
-}
-
-.mytheme .black .v-datefield-calendarpanel .v-first {
-	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
-}
-
-.mytheme .black .v-datefield-calendarpanel .v-last {
-	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
-}
-
-.mytheme .black .v-datefield-prompt .v-datefield-textfield {
-	color: #5f6366;
-}
-
-.mytheme .v-inline-datefield {
-	overflow: hidden;
-}
-
-.mytheme input.v-textfield-readonly:focus {
-	background-color: transparent;
-}
-
-.mytheme .v-inline-datefield-calendarpanel {
-	border-collapse: collapse;
-	margin: 0;
-	padding: 0;
-	height: auto !important;
-}
-
-.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
-	display: none;
-}
-
-.mytheme .v-inline-datefield-calendarpanel td {
-	vertical-align: top;
-}
-
-.mytheme td.v-inline-datefield-calendarpanel-month {
-	height: 23px;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme span.v-inline-datefield-calendarpanel-month {
+.mytheme .v-button-wrap, .mytheme .v-disabled:active .v-button-wrap {
 	display: block;
-	text-align: center;
-	height: 16px;
-	padding: 3px 10px 0 10px;
-	border-left: 1px solid #efefef;
-	border-right: 1px solid #d8d8d8;
-	text-shadow: #fff 0 1px 0;
-	overflow: hidden;
-	margin-top: 1px;
-}
-
-.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
-	width: 35px;
-}
-
-.mytheme .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .mytheme .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .mytheme .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
-	width: 124px;
-}
-
-.mytheme .v-inline-datefield-month, .mytheme .v-inline-datefield-day, .mytheme .v-inline-datefield-full {
-	min-width: 240px;
-}
-
-.mytheme .v-inline-datefield-popupcalendar {
-	min-width: 0;
-	padding-right: 24px;
-}
-
-.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel {
-	width: 100px;
-}
-
-.mytheme td.v-inline-datefield-calendarpanel-prevyear {
-	text-align: right;
-}
-
-.mytheme td.v-inline-datefield-calendarpanel-nextyear {
-	text-align: left;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-prevyear button, .mytheme .v-inline-datefield-calendarpanel-nextyear button, .mytheme .v-inline-datefield-calendarpanel-prevmonth button, .mytheme .v-inline-datefield-calendarpanel-nextmonth button {
-	width: 24px;
-	height: 23px;
+	padding: 4px 13px;
 	border: none;
-	background: transparent;
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
-	overflow: hidden;
-	padding: 0;
-	text-indent: -9999px;
-	outline: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-}
-
-.v-ie .mytheme .v-inline-datefield-calendarpanel-prevyear button, .v-ie .mytheme .v-inline-datefield-calendarpanel-nextyear button, .v-ie .mytheme .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .v-inline-datefield-calendarpanel-nextmonth button {
-	text-indent: 0;
-	font-size: 1px;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-nextyear button {
-	background-position: left top;
-	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .mytheme .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .mytheme .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-prevmonth, .mytheme .v-inline-datefield-calendarpanel-nextmonth {
-	width: 24px;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-prevmonth button, .mytheme .v-inline-datefield-calendarpanel-nextmonth button {
-	width: 100%;
-	height: 21px;
-	border-left: 1px solid #efefef;
-	border-right: 1px solid #d8d8d8;
-	background: transparent;
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
-	min-width: 24px;
-	margin-top: 1px;
-}
-
-.v-ie .mytheme .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .v-inline-datefield-calendarpanel-nextmonth button {
-	border: none;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .mytheme .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .mytheme .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
-	background-position: center top;
-	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-body, .mytheme .v-inline-datefield-calendarpanel-time {
-	text-align: center;
-	vertical-align: top;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-body table {
-	border-collapse: collapse;
-	margin: 0;
-	padding: 0;
-	width: 220px;
-	margin: 0 auto;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weekdays td {
-	width: 14.2%;
-	overflow: hidden;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
-	font-size: 10px;
-	line-height: normal;
-	text-transform: uppercase;
-	color: #eaeff1;
-	text-shadow: #3b4651 0 -1px 0;
-	vertical-align: top;
-	padding: 0;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weeknumbers td {
-	width: 12.4%;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weekdays strong {
-	display: block;
-	text-align: right;
-	padding: 1px 5px 0 0;
-	height: 14px;
-	border-top: 1px solid #596775;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weekdays .v-first {
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weekdays .v-last {
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
-}
-
-.v-ie .mytheme .v-inline-datefield-calendarpanel-weekdays td {
-	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
-	background-position: left top;
-}
-
-.v-ie .mytheme .v-inline-datefield-calendarpanel .v-first {
-	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
-}
-
-.v-ie .mytheme .v-inline-datefield-calendarpanel .v-last {
-	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-body td {
-	text-align: right;
-	height: 19px;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-day, .mytheme .v-inline-datefield-calendarpanel-weeknumber, .mytheme .v-inline-datefield-calendarpanel-day-today {
-	padding: 2px 5px 2px 0;
-	display: block;
-	margin: 1px 0 0 5px;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-weeknumber {
-	margin: 0;
-	padding-top: 4px;
-	padding-bottom: 3px;
-	font-size: 10.8px;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-day-today {
-	color: #4095d1;
-	border: none;
-}
-
-.mytheme .v-inline-datefield-calendarpanel-day-selected {
-	background: #507ba3;
-	color: #fff;
-	text-shadow: #3b5b79 0 1px 0;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 100%;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
 }
 
-.mytheme .v-inline-datefield-calendarpanel-time select {
-	padding: 0;
-	font-size: 11px;
-	margin: 2px;
+.v-sa .mytheme .v-button, .v-sa .mytheme .v-button-wrap, .v-ff .mytheme .v-button, .v-ff .mytheme .v-button-wrap {
+	overflow: hidden;
 }
 
-.mytheme .v-inline-datefield-popup {
-	background: #f8f8f9;
-	padding: 8px 4px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+.mytheme .v-button:focus {
+	outline: none;
 }
 
-.v-sa .mytheme .v-inline-datefield-popup, .v-op .mytheme .v-inline-datefield-popup {
-	background: rgba(255, 255, 255, 0.95);
+.mytheme .v-button .v-icon {
+	margin-left: -0.5em;
 }
 
-.mytheme .v-inline-datefield-year > .v-inline-datefield-textfield {
-	width: 4.5em;
+.mytheme .v-button .v-button-caption {
+	line-height: 1.26;
 }
 
-.mytheme .v-inline-datefield-month > .v-inline-datefield-textfield {
-	width: 5.5em;
+.mytheme .v-button-big {
+	font-size: 15.6px;
 }
 
-.mytheme .v-inline-datefield-day > .v-inline-datefield-textfield {
-	width: 6em;
+.mytheme .v-button-small {
+	font-size: 11.05px;
+	font-weight: normal;
 }
 
-.mytheme .v-inline-datefield-full > .v-inline-datefield-textfield {
-	width: 12.5em;
+.mytheme .v-button-small .v-button-wrap {
+	padding: 3px 11px;
 }
 
-.mytheme .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
-	border-right-width: 0;
-	-moz-border-radius-topright: 0;
-	-moz-border-radius-bottomright: 0;
-	-webkit-border-top-right-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
-	height: 23px;
+.mytheme .v-button-small:active .v-button-wrap, .v-ie8 .mytheme .v-button-small.v-pressed .v-button-wrap, .mytheme .v-button-down.small .v-button-wrap {
+	padding: 2px 10px;
 }
 
-.mytheme .v-inline-datefield.v-readonly input.v-inline-datefield-textfield {
-	border-right-width: 1px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+.mytheme .v-button-small .v-icon {
+	margin-top: -4px;
+	margin-bottom: -4px;
 }
 
-.mytheme .v-inline-datefield-prompt .v-inline-datefield-textfield {
-	color: #999;
-	font-style: normal;
+.mytheme .v-button-wide .v-button-wrap {
+	padding-left: 26px;
+	padding-right: 26px;
 }
 
-.mytheme .v-inline-datefield-popupcalendar .v-inline-datefield-button {
-	width: 24px;
-	margin-right: -24px;
-	height: 23px;
-	background: transparent;
-	border: none;
-	padding: 0;
-	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
-	cursor: pointer;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
+.mytheme .v-button-wide:active .v-button-wrap, .v-ie8 .mytheme .v-button-wide.v-pressed .v-button-wrap {
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
-.mytheme .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
-	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+.mytheme .v-button-tall .v-button-wrap {
+	padding-top: 13px;
+	padding-bottom: 13px;
 }
 
-.mytheme .black .v-inline-datefield-popupcalendar .v-inline-datefield-button {
-	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+.mytheme .v-button-tall:active .v-button-wrap, .v-ie8 .mytheme .v-button-tall.v-pressed .v-button-wrap {
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-.mytheme .black .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
-	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black td.v-inline-datefield-calendarpanel-month {
-	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-	height: 21px;
-}
-
-.mytheme .black span.v-inline-datefield-calendarpanel-month {
-	border-left: 1px solid #333638;
-	border-right: 1px solid #232527;
-	color: #c9ccce;
-	text-shadow: #000 0 -1px 0;
-	padding: 4px 10px 1px 10px;
-	margin-top: 0;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-prevyear button, .mytheme .black .v-inline-datefield-calendarpanel-nextyear button, .mytheme .black .v-inline-datefield-calendarpanel-prevmonth button, .mytheme .black .v-inline-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
-	height: 21px;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-nextyear button {
-	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .mytheme .black .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .mytheme .black .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
-	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-prevmonth, .mytheme .black .v-inline-datefield-calendarpanel-nextmonth {
-	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-prevmonth button, .mytheme .black .v-inline-datefield-calendarpanel-nextmonth button {
-	border-left: 1px solid #333638;
-	border-right: 1px solid #232527;
-	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-	margin-top: 0;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-nextmonth button {
-	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .mytheme .black .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
-	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .mytheme .black .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
-	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
-}
-
-.v-ie .mytheme .black .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .mytheme .black .v-inline-datefield-calendarpanel-nextmonth button {
-	border: none;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-weekdays td {
-	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
-	color: #0a0b0b;
-	text-shadow: #5a5c5e 0 1px 0;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel-weekdays strong {
-	border-top-color: #1b1c1d;
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel .v-first {
-	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
-}
-
-.mytheme .black .v-inline-datefield-calendarpanel .v-last {
-	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
-}
-
-.mytheme .black .v-inline-datefield-prompt .v-inline-datefield-textfield {
-	color: #5f6366;
-}
-
-.mytheme .v-inline-datefield {
-	line-height: 14px;
-}
-
-.mytheme .v-formlayout-errorcell {
-	width: 13px;
-}
-
-.mytheme .v-formlayout-cell .v-errorindicator {
-	width: 13px;
-	height: 16px;
-	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
-}
-
-.mytheme .v-formlayout-captioncell {
-	text-align: right;
-	white-space: nowrap;
-}
-
-.mytheme .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .mytheme .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .mytheme .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
-	padding-top: 8px;
-}
-
-.mytheme .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .mytheme .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .mytheme .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
-	padding-top: 15px;
-}
-
-.mytheme .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .mytheme .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .mytheme .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
-	padding-bottom: 15px;
-}
-
-.mytheme .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
-	padding-left: 18px;
-}
-
-.mytheme .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
-	padding-right: 18px;
-}
-
-.mytheme .v-form-errormessage {
-	background: transparent url(../reindeer/common/icons/error.png) no-repeat 3px 2px;
-	padding-left: 20px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	min-height: 20px;
-}
-
-.mytheme .v-form fieldset {
-	border: none;
-	border-top: 1px solid #babfc0;
-}
-
-.mytheme .v-form-nocaption fieldset {
-	border: none;
-}
-
-.mytheme .v-form-nocaption legend {
-	display: none;
-}
-
-.mytheme .v-form legend {
-	margin: 0 0 0 20px;
-	padding: 0 5px;
+.mytheme .v-button-default, .mytheme .v-disabled.v-button-default:focus {
 	font-weight: bold;
-	color: #222;
 }
 
-.mytheme .black .v-form legend {
-	color: #e3e6e8;
+.mytheme div.v-button-link, .mytheme div.v-button-link:focus, .mytheme .v-button-link:active, .mytheme div.v-disabled.v-button-link, .mytheme div.v-disabled.v-button-link:focus, body.v-ie .mytheme .v-pressed.v-button-link, .mytheme div.v-button-borderless, .mytheme div.v-button-borderless:focus, .mytheme .v-button-borderless:active, .mytheme div.v-disabled.v-button-borderless, .mytheme div.v-disabled.v-button-borderless:focus, body.v-ie .mytheme .v-pressed.v-button-borderless {
+	background: transparent;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	margin: 1px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 
-.mytheme .v-label {
-	line-height: 18px;
+.mytheme .v-button-link .v-button-wrap, .mytheme .v-button-borderless .v-button-wrap {
+	display: inline;
 }
 
-.mytheme .white .black, .mytheme .blue .black {
-	color: #C9CCCE;
-	text-shadow: 0 0 1px #000;
+.mytheme div.v-button-link .v-button-wrap, .mytheme div.v-button-link:focus .v-button-wrap, .mytheme .v-button-link:active .v-button-wrap, .mytheme div.v-disabled.v-button-link .v-button-wrap, .mytheme div.v-disabled.v-button-link:focus .v-button-wrap, body.v-ie .mytheme .v-pressed.v-button-link .v-button-wrap, .mytheme div.v-button-borderless .v-button-wrap, .mytheme div.v-button-borderless:focus .v-button-wrap, .mytheme .v-button-borderless:active .v-button-wrap, .mytheme div.v-disabled.v-button-borderless .v-button-wrap, .mytheme div.v-disabled.v-button-borderless:focus .v-button-wrap, body.v-ie .mytheme .v-pressed.v-button-borderless .v-button-wrap {
+	background: transparent;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	padding: 1px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 
-.mytheme .black .v-label-h1, .mytheme .black .v-label-h2, .mytheme .black .v-caption-h1, .mytheme .black .v-caption-h2, .mytheme .white .black .v-label-h1, .mytheme .white .black .v-label-h2, .mytheme .white .black .v-caption-h1, .mytheme .white .black .v-caption-h2, .mytheme .blue .black .v-label-h1, .mytheme .blue .black .v-label-h2, .mytheme .blue .black .v-caption-h1, .mytheme .blue .black .v-caption-h2 {
-	color: #fff;
-	text-shadow: rgba(0, 0, 0, 0.8) 0 2px 2px;
+.mytheme .v-button-link:focus .v-button-caption, .mytheme .v-button-borderless:focus .v-button-caption {
+	border: 1px dotted gray;
+	margin: -1px;
 }
 
-.mytheme .black .v-label-light, .mytheme .white .black .v-label-light {
-	color: #72787c;
+.mytheme .v-button-link:active .v-button-caption, .mytheme .v-button-borderless:active .v-button-caption {
+	border: none;
+	margin: 0;
 }
 
-.mytheme .black .v-label hr, .mytheme .white .black .v-label hr {
-	background: #0c0d0e;
-	color: #0c0d0e;
-	border-bottom-color: #292b2e;
+.mytheme .v-button-borderless:active .v-icon {
+	opacity: 0.6;
 }
 
-.mytheme.v-app .white, .mytheme .v-window .white, .mytheme.v-app .blue, .mytheme .v-window .blue {
-	color: #222;
+.mytheme .v-button-link .v-icon, .mytheme .v-button-borderless .v-icon {
+	margin-left: 0;
+}
+
+.mytheme .v-button-icon-on-top.v-button-borderless:focus .v-button-caption {
+	margin-top: 1px;
+}
+
+.mytheme .v-button-icon-on-top .v-button-caption, .mytheme .v-button-icon-on-top:focus .v-button-caption, .mytheme .v-button-icon-on-top.v-button-borderless:active .v-button-caption {
+	display: block;
+	margin-top: 2px;
+}
+
+.mytheme .v-button-icon-on-top .v-icon {
+	margin: 0;
+}
+
+.mytheme .v-button-icon-on-right .v-icon {
+	float: right;
+	margin-left: 3px;
+	margin-right: -0.5em;
+}
+
+.mytheme .v-button-icon-only .v-button-caption {
+	display: none;
+}
+
+.mytheme .v-button-icon-only .v-icon {
+	margin-right: -0.5em;
+}
+
+.mytheme .v-colorpicker-button-color {
+	border: 1px solid #8B8B8B;
+}
+
+.mytheme .v-colorpicker-popup {
+	width: 248px;
+}
+
+.mytheme .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 308px;
+}
+
+.mytheme .v-label-h1, .mytheme .v-label h1, .mytheme .v-label-h2, .mytheme .v-label h2, .mytheme .v-label-h3, .mytheme .v-label h3, .mytheme .v-label-h4, .mytheme .v-label h4 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.mytheme .v-label-h1, .mytheme .v-label h1 {
+	padding: 0.75em 0 0.5em 0;
+	font-size: 24.05px;
+}
+
+.mytheme .v-label-h2, .mytheme .v-label h2 {
+	padding: 0.67em 0 0.33em 0;
+	font-size: 18.2px;
+}
+
+.mytheme .v-label-h3, .mytheme .v-label h3 {
+	margin: 0.71em 0 0.29em 0;
+	font-size: 14.3px;
+}
+
+.mytheme .v-label-h4, .mytheme .v-label h4 {
+	padding: 0.23em 0;
+	font-size: 13px;
+}
+
+.mytheme .v-label-big {
+	font-size: 15.6px;
+}
+
+.mytheme .v-label-small {
+	font-size: 11.7px;
+	line-height: 1.3;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.mytheme .v-label-tiny {
+	font-size: 11.05px;
+	line-height: 1.2;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.mytheme.v-app .v-label-warning, .mytheme.v-app .v-label-error {
+	color: #574734;
+	background: #fffec8 url(../chameleon/img/label-warning-icon.png) no-repeat 0.2em 50%;
+	white-space: nowrap;
+	padding: 0.3em 1em 0.3em 2.4em;
+	overflow: hidden;
+	width: auto !important;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	text-shadow: none;
 }
 
-.mytheme .blue .v-label-h1, .mytheme .blue .v-label-h2, .mytheme .blue .v-caption-h1, .mytheme .blue .v-caption-h2, .mytheme .white .blue .v-label-h1, .mytheme .white .blue .v-label-h2, .mytheme .white .blue .v-caption-h1, .mytheme .white .blue .v-caption-h2 {
+.mytheme.v-app .v-label-error {
 	color: #fff;
-	text-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
-}
-
-.mytheme .blue .v-label-light, .mytheme .white .blue .v-label-light {
-	color: #6e7c83;
-}
-
-.mytheme .blue .v-label hr, .mytheme .white .blue .v-label hr {
-	background: #a3bcc9;
-	color: #a3bcc9;
-	border-bottom-color: #cfe2eb;
-}
-
-.mytheme .v-label-h1, .mytheme .v-label-h2, .mytheme .v-caption-h1, .mytheme .v-caption-h2, .mytheme .white .v-label-h1, .mytheme .white .v-label-h2, .mytheme .white .v-caption-h1, .mytheme .white .v-caption-h2 {
-	font-family: Helvetica, Arial, "Lucida Grande", Geneva, Tahoma, Verdana, sans-serif;
-	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
-	color: #44698b;
-	letter-spacing: -0.02em;
-	text-shadow: #fff 0 -1px 1px;
+	background: #c22f24 url(../chameleon/img/label-error-icon.png) no-repeat 0.2em 50%;
+	text-shadow: 0 1px 0 #8f2e27;
 }
 
-.mytheme .v-label-h2, .mytheme .v-caption-h2, .mytheme .white .v-label-h2, .mytheme .white .v-caption-h2 {
-	font-size: 16px;
-	line-height: 22px;
+.mytheme .v-label-big.v-label-warning, .mytheme .v-label-big.v-label-error {
+	background-image: url(../chameleon/img/label-warning-icon-big.png);
+	background-position: 0 50%;
+	padding: 0.5em 1em 0.5em 3em;
 }
 
-.mytheme .v-label-light, .mytheme .white .v-label-light {
-	font-size: 11px;
-	line-height: 13px;
-	color: #707070;
+.mytheme .v-label-big.v-label-error {
+	background-image: url(../chameleon/img/label-error-icon-big.png);
 }
 
-.mytheme .v-label hr, .mytheme .white .v-label hr {
-	height: 2px;
+.mytheme.v-app .v-label-loading {
+	height: 32px;
+	line-height: 32px;
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	white-space: nowrap;
+	padding: 0.3em 1em 0.3em 36px;
 	overflow: hidden;
-	background: #dcdcdc;
-	color: #dcdcdc;
-	border: none;
-	border-bottom: 1px solid #fff;
-}
-
-.v-sa .mytheme .v-label hr, .v-ie8 .mytheme .v-label hr {
-	height: 1px;
-}
-
-.mytheme .v-table .v-label {
-	line-height: normal;
-}
-
-.mytheme .v-orderedlayout-margin-top, .mytheme .v-horizontallayout-margin-top, .mytheme .v-verticallayout-margin-top, .mytheme .v-layout.v-margin-top {
-	padding-top: 18px;
-}
-
-.mytheme .v-orderedlayout-margin-right, .mytheme .v-horizontallayout-margin-right, .mytheme .v-verticallayout-margin-right, .mytheme .v-layout.v-margin-right {
-	padding-right: 18px;
-}
-
-.mytheme .v-orderedlayout-margin-bottom, .mytheme .v-horizontallayout-margin-bottom, .mytheme .v-verticallayout-margin-bottom, .mytheme .v-layout.v-margin-bottom {
-	padding-bottom: 18px;
-}
-
-.mytheme .v-orderedlayout-margin-left, .mytheme .v-horizontallayout-margin-left, .mytheme .v-verticallayout-margin-left, .mytheme .v-layout.v-margin-left {
-	padding-left: 18px;
-}
-
-.mytheme .v-orderedlayout-spacing-on, .mytheme .v-horizontallayout-spacing-on, .mytheme .v-verticallayout-spacing-on {
-	padding-top: 7px;
-	padding-left: 6px;
-}
-
-.mytheme .v-spacing {
-	height: 7px;
-	width: 6px;
-}
-
-.mytheme .v-verticallayout-blue, .mytheme .v-horizontallayout-blue, .mytheme .v-orderedlayout-blue, .mytheme .v-gridlayout-blue, .mytheme .v-csslayout-blue, .mytheme .v-formlayout-blue, .mytheme .v-splitpanel-vertical-blue, .mytheme .v-splitpanel-horizontal-blue {
-	background-color: #bcd3de;
-}
-
-.mytheme .v-panel-content > div.blue {
-	background-color: #bcd3de;
-}
-
-.mytheme .v-verticallayout-white, .mytheme .v-horizontallayout-white, .mytheme .v-orderedlayout-white, .mytheme .v-gridlayout-white, .mytheme .v-csslayout-white, .mytheme .v-formlayout-white, .mytheme .v-splitpanel-vertical-white, .mytheme .v-splitpanel-horizontal-white {
-	background-color: #fff;
-	color: #222;
-}
-
-.mytheme .v-panel-content > div.white {
-	background-color: #fff;
-	color: #222;
-}
-
-.mytheme .v-verticallayout-black, .mytheme .v-horizontallayout-black, .mytheme .v-orderedlayout-black, .mytheme .v-gridlayout-black, .mytheme .v-csslayout-black, .mytheme .v-formlayout-black, .mytheme .v-splitpanel-vertical-black, .mytheme .v-splitpanel-horizontal-black {
-	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
-}
-
-.mytheme .v-panel-content > div.black {
-	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
-}
-
-.mytheme .v-link a:link span {
-	color: #1b699f;
-}
-
-.mytheme .v-link a:visited span {
-	color: #5c7485;
-}
-
-.mytheme .v-link a:hover span {
-	color: #2483c4;
+	width: auto !important;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 }
 
 .mytheme .v-menubar {
-	height: 23px;
-	background: #323336 repeat-x;
-	background-image: url(../reindeer/menubar/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #d1d3d6;
-	text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
-	padding: 0 8px;
+	padding: 0 0.4em;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-width: 1px 0;
 }
 
 .mytheme .v-menubar .v-menubar-menuitem {
-	padding: 3px 8px;
-	height: 17px;
-	line-height: 16px;
-}
-
-.mytheme .v-menubar .v-menubar-menuitem:hover {
-	color: #fff;
-}
-
-.mytheme .v-menubar-submenu {
-	background: #f8f8f9;
-	border: none;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
-	overflow: hidden;
-	padding: 4px 0;
+	padding: 0.2em 0.5em;
+	line-height: normal;
 }
 
 .mytheme .v-menubar-submenu .v-menubar-menuitem {
-	padding: 1px 26px 1px 10px;
-	line-height: 16px;
-}
-
-.mytheme .v-menubar-submenu .v-menubar-menuitem-caption .v-icon {
-	vertical-align: middle;
-}
-
-.mytheme .v-menubar .v-menubar-menuitem-selected, .mytheme .v-menubar-submenu .v-menubar-menuitem-selected {
-	background: #4d749f repeat-x;
-	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #fff;
-	text-shadow: 0 1px 0 #3b5a7a;
-}
-
-.mytheme .v-menubar .v-menubar-menuitem-selected {
-	background-image: url(../reindeer/menubar/img/menu-sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px  */
+	padding-right: 1.5em;
 }
 
 .mytheme .v-menubar-submenu .v-menubar-submenu-indicator {
-	background: transparent url(../reindeer/menubar/img/submenu-icon.png) no-repeat right 70%;
-	width: 26px;
-	height: 16px;
-	text-indent: -9999px;
-	font-size: 10.8px;
+	margin-top: 0.1em;
+	font-size: 11.7px;
 }
 
-.mytheme .v-menubar-submenu .v-menubar-menuitem-selected .v-menubar-submenu-indicator {
-	background-image: url(../reindeer/menubar/img/submenu-icon-hover.png);
+.mytheme .v-menubar-submenu .v-menubar-menuitem-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
 }
 
-.mytheme .v-menubar-submenu-check-column .v-menubar-menuitem {
-	padding-left: 6px;
-}
-
-.mytheme .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
-	padding-left: 18px;
-}
-
-.mytheme .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
-	background: transparent url(../reindeer/menubar/img/checked.png) no-repeat left;
-}
-
-.mytheme .v-menubar-submenu .v-menubar-menuitem-unchecked .v-menubar-menuitem-caption {
-	background: transparent url(../reindeer/menubar/img/unchecked.png) no-repeat left;
-}
-
-.mytheme .v-menubar-submenu .v-menubar-menuitem-selected-checked .v-menubar-menuitem-caption {
-	background: transparent url(../reindeer/menubar/img/checked-selected.png) no-repeat left;
-}
-
-.mytheme .v-menubar-submenu .v-menubar-menuitem-selected-unchecked .v-menubar-menuitem-caption {
-	background: transparent url(../reindeer/menubar/img/unchecked-selected.png) no-repeat left;
-}
-
-.mytheme .v-Notification {
-	color: #fff;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+.mytheme div.v-Notification {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
 	font-size: 16px;
-	background: #c8ccd0;
-	font-weight: bold;
-}
-
-.v-ie9 .mytheme .v-Notification H1, .v-ie10 .mytheme .v-Notification H1 {
-	font-weight: bold;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .mytheme .v-Notification p {
 	line-height: 1.3;
 }
 
-.mytheme .v-Notification-warning {
-	background: #fdf3b5;
-	color: #ca9a61;
-	border: 3px solid #fee3af;
+.mytheme div.v-Notification-warning {
+	background-color: #fffec8;
+	color: #574734;
+	border: 2px solid #fee3af;
 }
 
-.mytheme .v-Notification-error {
-	background: #b40000 url(../reindeer/notification/img/error-close.png) no-repeat right top;
-	border: 3px solid #ca3030;
+.mytheme div.v-Notification-warning h1 {
+	padding-left: 44px;
+	background: transparent url(../chameleon/img/label-warning-icon-big.png) no-repeat 0 50%;
 }
 
-.mytheme .v-Notification-tray {
+.mytheme div.v-Notification-error {
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	background: #c22f24 url(../chameleon/img/error-close.png) no-repeat right top;
+	border: 2px solid #ca3030;
+}
+
+.mytheme div.v-Notification-error h1 {
+	padding-left: 44px;
+	background: transparent url(../chameleon/img/label-error-icon-big.png) no-repeat 0 50%;
+}
+
+.mytheme div.v-Notification-tray {
+	color: #fff;
 	margin: 0 5px 5px 0;
-	background: #3b3c3e;
-	border: 2px solid #585b5c;
+	background: #3b3b3b url(../chameleon/img/grad-light-top2.png) repeat-x;
+	border: 1px solid #5b5b5b;
 	padding: 0.8em 0.9em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .mytheme .v-Notification-tray h1 {
@@ -5250,709 +4217,507 @@ body .mytheme.v-app .v-app-loading {
 	font-weight: normal;
 }
 
-.mytheme .v-Notification-system {
+.mytheme div.v-Notification-system {
+	color: #fff;
+	border: none;
 	background-color: #b40000;
 }
 
-.mytheme .blue .v-panel-caption, .mytheme .blue .v-panel-nocaption, .mytheme .blue .v-panel-content {
-	border-color: #a8bcc5;
-}
-
-.mytheme .v-panel-caption, .mytheme .v-panel-nocaption, .mytheme .white .v-panel-caption, .mytheme .white .v-panel-nocaption {
-	border-bottom: 1px solid #e5e5e5;
-	line-height: 16px;
-}
-
-.v-webkit .mytheme .v-panel-caption, .v-webkit .mytheme .v-panel-nocaption, .v-gecko .mytheme .v-panel-caption, .v-gecko .mytheme .v-panel-nocaption, .v-ie9 .mytheme .v-panel-caption, .v-ie9 .mytheme .v-panel-nocaption, .v-ie10 .mytheme .v-panel-caption, .v-ie10 .mytheme .v-panel-nocaption {
-	border-bottom-color: rgba(0, 0, 0, 0.08);
-}
-
-.v-webkit .mytheme .v-panel-content, .v-gecko .mytheme .v-panel-content, .v-ie9 .mytheme .v-panel-content, .v-ie10 .mytheme .v-panel-content {
-	border-top-color: rgba(0, 0, 0, 0.07);
-}
-
-.v-webkit .mytheme .v-panel-deco, .v-gecko .mytheme .v-panel-deco, .v-ie9 .mytheme .v-panel-deco, .v-ie10 .mytheme .v-panel-deco {
-	border-top-color: rgba(0, 0, 0, 0.1);
-	background: rgba(0, 0, 0, 0.08);
-}
-
 .mytheme .v-panel-caption {
-	padding-bottom: 2px;
-}
-
-.mytheme .v-panel-content, .mytheme .white .v-panel-content {
-	background: #fff;
-	border: 1px solid #dcdcdc;
+	background: #b9dcff;
+	font-size: 15.6px;
+	border: 1px solid #b3b3b3;
 	border-bottom: none;
-	border-top: none;
+	padding: 0.2em 0.6em;
 }
 
-.mytheme .blue .v-panel-deco {
-	border-color: #92a3ac;
-	background: #adc2cd;
-}
-
-.mytheme .v-panel-deco, .mytheme .white .v-panel-deco {
-	height: 1px;
-	border-top: 1px solid #bebebe;
-	background: #e2e2e2;
+.mytheme .v-panel-nocaption {
+	padding: 0;
+	height: 0;
 	overflow: hidden;
+	border-top: 1px solid #b3b3b3;
 }
 
-.mytheme .v-panel-caption .v-errorindicator {
-	height: 16px;
-	width: 13px;
-	background: url(../reindeer/common/icons/error.png) no-repeat 50%;
-	display: inline;
-	display: inline-block;
-	vertical-align: middle;
+.mytheme .v-panel-content {
+	background: #fff;
+	border: 1px solid #b3b3b3;
+	border-top: none;
+	border-bottom: none;
 }
 
-.mytheme .v-panel-light .v-panel-caption-light, .mytheme .v-panel-light .v-panel-nocaption-light {
+.mytheme .v-panel-deco {
+	height: 0;
+	overflow: hidden;
+	border-top: 1px solid #b3b3b3;
+}
+
+.mytheme div.v-panel-caption-borderless {
 	border: none;
 }
 
-.mytheme .v-panel-light .v-panel-content-light {
+.mytheme div.v-panel-nocaption-borderless, .mytheme div.v-panel-content-borderless, .mytheme div.v-panel-deco-borderless {
 	border: none;
 	background: transparent;
 }
 
-.mytheme .v-panel-light .v-panel-deco-light {
-	height: 0;
-	border: none;
+.mytheme .v-panel-light .v-panel-caption-light {
+	background: transparent;
+	font-weight: normal;
+	border-bottom: 1px solid #b3b3b3;
 }
 
-.mytheme .v-popupview {
-	color: #1b699f;
+.mytheme div.v-panel-content-light {
+	background: transparent;
 }
 
-.mytheme .v-popupview:hover {
-	color: #2483c4;
-}
-
-.mytheme .v-popupview-popup {
+.mytheme .v-panel-bubble .v-panel-captionwrap {
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
 	background: #fff;
-	padding: 3px;
-}
-
-.mytheme .v-progressbar-wrapper {
-	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
-	border: 1px solid #bfbfbf;
-}
-
-.mytheme .v-disabled .v-progressbar-wrapper {
-	background-image: url(../reindeer/progressindicator/img/disabled.gif);
-}
-
-.mytheme .v-progressbar-indicator {
-	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
-}
-
-.mytheme .v-progressindicator-wrapper {
-	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
-	border: 1px solid #bfbfbf;
-}
-
-.mytheme .v-disabled .v-progressindicator-wrapper {
-	background-image: url(../reindeer/progressindicator/img/disabled.gif);
-}
-
-.mytheme .v-progressindicator-indicator {
-	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
-}
-
-.mytheme .v-filterselect {
-	height: 24px;
-	background-repeat: no-repeat;
-	background-image: url(../reindeer/select/img/left.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
-	padding-left: 2px;
-	padding-right: 25px;
-}
-
-.mytheme.v-app .v-filterselect-input, .mytheme .v-window .v-filterselect-input, .mytheme .v-popupview-popup .v-filterselect-input {
-	background: transparent repeat-x;
-	background-image: url(../reindeer/select/img/center.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
-	border: none;
-	height: 24px;
-}
-
-.mytheme.v-app input.v-filterselect-input, .mytheme .v-window input.v-filterselect-input, .mytheme .v-popupview-popup input.v-filterselect-input {
-	padding: 4px 0 4px 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.mytheme .v-filterselect-prompt .v-filterselect-input {
-	font-style: normal;
-}
-
-.mytheme .v-filterselect-input:focus {
-	outline: none;
-}
-
-.mytheme .v-filterselect-focus {
-	background-image: url(../reindeer/select/img/left-focus.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .v-filterselect-focus .v-filterselect-input {
-	background-image: url(../reindeer/select/img/center-focus.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-filterselect-button {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	padding: 1px 2px;
 	overflow: hidden;
-	width: 25px;
-	height: 24px;
-	background-position: 0 0;
-	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals ; sprite-margin-bottom: 1px */
-	cursor: default;
-	margin-right: -25px;
 }
 
-.mytheme .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/right-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-filterselect-button:active {
-	background-image: url(../reindeer/select/img/right-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-filterselect-focus .v-filterselect-button {
-	background-image: url(../reindeer/select/img/right-focus.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-filterselect-focus .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/right-focus-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-filterselect-focus .v-filterselect-button:active {
-	background-image: url(../reindeer/select/img/right-focus-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-disabled .v-filterselect-button:hover, .mytheme .v-readonly .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-filterselect-suggestpopup {
-	background: #f8f8f9;
+.mytheme .v-panel-bubble .v-panel-caption-bubble {
 	border: none;
+	background-image: url(../chameleon/img/grad-light-top.png);
+	background-repeat: repeat-x;
+	background-position: 0 -1px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
-	overflow: hidden;
+	margin: 1px 0;
+	font-size: 13px;
+	line-height: 1.2;
+	padding: 0.3em 0.6em;
 }
 
-.mytheme .v-filterselect-suggestmenu {
-	margin: 4px 0;
+.mytheme .v-panel-nocaption-bubble {
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 
-.mytheme .v-filterselect-suggestmenu .gwt-MenuItem {
-	padding: 1px 8px;
-	height: 16px;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	cursor: default;
+.mytheme .v-panel-deco-bubble {
+	height: 2px;
+	border: 1px solid #b3b3b3;
+	border-top: none;
+	background: #fff;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
 }
 
-.mytheme .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
-	margin-right: 3px;
-}
-
-.mytheme .v-filterselect-suggestmenu .gwt-MenuItem-selected {
-	background: transparent repeat-x;
-	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #fff;
-	text-shadow: #3b5a7a 0 1px 0;
-}
-
-.mytheme .v-filterselect-nextpage, .mytheme .v-filterselect-nextpage-off, .mytheme .v-filterselect-prevpage-off, .mytheme .v-filterselect-prevpage {
-	height: 11px;
-	width: 100%;
+.mytheme div.v-panel-borderless .v-panel-captionwrap, .mytheme div.v-panel-borderless .v-panel-deco-bubble {
+	border: none;
+	padding: 0;
 	background: transparent;
-	margin-bottom: -4px;
 }
 
-.mytheme .v-filterselect-nextpage, .mytheme .v-filterselect-nextpage-off {
-	margin: -4px 0 0;
+.mytheme div.v-panel-borderless .v-panel-content-bubble {
+	background: transparent;
 }
 
-.mytheme .v-filterselect-nextpage:hover {
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/select/img/page-down-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+.mytheme .v-popupview-popup {
+	padding: 0.3em 0.4em;
 }
 
-.mytheme .v-filterselect-prevpage:hover {
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/select/img/page-up-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+.mytheme .v-progressbar-wrapper {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #eee url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
+	overflow: visible;
+	font-size: 1px;
+	line-height: 1px;
 }
 
-.mytheme .v-filterselect-nextpage:active {
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/select/img/page-down-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+.mytheme .v-progressbar-indicator {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -10px;
+	margin: -1px;
+	height: 7px;
+	border: 1px solid #b3b3b3;
 }
 
-.mytheme .v-filterselect-prevpage:active {
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/select/img/page-up-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+.mytheme .v-progressbar-small {
+	width: 110px;
 }
 
-.mytheme .v-filterselect-nextpage-off span, .mytheme .v-filterselect-prevpage-off span {
+.mytheme .v-progressbar-small .v-progressbar-wrapper, .mytheme .v-progressbar-small .v-progressbar-indicator {
+	height: 2px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+.mytheme .v-progressbar-big {
+	width: 250px;
+}
+
+.mytheme .v-progressbar-big .v-progressbar-wrapper, .mytheme .v-progressbar-big .v-progressbar-indicator {
+	height: 14px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.mytheme .v-progressbar-indeterminate.v-progressbar-big {
+	width: 42px;
+	height: 42px;
+	background: #fff url(../base/common/img/ajax-loader-big.gif) no-repeat 50%;
+}
+
+.mytheme .v-progressbar-indeterminate.v-disabled {
 	display: none;
 }
 
-.mytheme .v-filterselect-nextpage span, .mytheme .v-filterselect-prevpage span {
+.mytheme .v-progressbar-indeterminate.v-progressbar-bar {
 	display: block;
-	height: 11px;
-	width: 100%;
+	width: 150px;
+	height: 9px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.mytheme .v-progressbar-indeterminate.bar.v-progressbar-small {
+	width: 110px;
+	height: 4px;
+}
+
+.mytheme .v-progressbar-indeterminate.bar.v-progressbar-big {
+	width: 200px;
+	height: 16px;
+}
+
+.mytheme .v-progressbar-indeterminate.bar .v-progressbar-wrapper {
+	display: block;
+	background: #fff url(../chameleon/img/indeterminate-progress.gif);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	overflow: hidden;
-	text-indent: -99999px;
-	background: transparent no-repeat center 3px;
-	background-image: url(../reindeer/select/img/arrow-down.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
 }
 
-.mytheme .v-filterselect-prevpage span {
-	background-image: url(../reindeer/select/img/arrow-up.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
-}
-
-.mytheme .v-filterselect-nextpage:hover span {
-	background-image: url(../reindeer/select/img/arrow-down-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
-}
-
-.mytheme .v-filterselect-prevpage:hover span {
-	background-image: url(../reindeer/select/img/arrow-up-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
-}
-
-.mytheme .v-filterselect-status {
-	text-shadow: #e9eaeb 0 1px 0;
-	font-size: 11px;
-	line-height: normal;
-	width: 100%;
-	padding: 3px 0;
-	height: 11px;
+.mytheme .v-progressbar-indeterminate.bar .v-progressbar-indicator {
+	display: block;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: none;
+	margin: 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	overflow: hidden;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/select/img/status-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	-moz-border-radius-bottomleft: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
 }
 
-.v-ie .mytheme .v-filterselect-suggestmenu .gwt-MenuItem-selected {
-	background: transparent url(../reindeer/common/img/sel-bg.png) repeat-x;
+.mytheme .v-progressbar-indeterminate.bar.v-progressbar-small .v-progressbar-indicator {
+	background: transparent;
 }
 
-.v-ie .mytheme .v-filterselect-nextpage:hover {
-	background: transparent url(../reindeer/select/img/page-down-hover.png) repeat-x;
+.mytheme .v-progressbar-indeterminate.bar.v-disabled .v-progressbar-indicator {
+	background: #fff;
 }
 
-.v-ie .mytheme .v-filterselect-prevpage:hover {
-	background: transparent url(../reindeer/select/img/page-up-hover.png) repeat-x;
+.mytheme .v-progressindicator-wrapper {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #eee url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
+	overflow: visible;
+	font-size: 1px;
+	line-height: 1px;
 }
 
-.v-ie .mytheme .v-filterselect-prevpage span {
-	background: transparent url(../reindeer/select/img/arrow-up.png) no-repeat center 3px;
+.mytheme .v-progressindicator-indicator {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -10px;
+	margin: -1px;
+	height: 7px;
+	border: 1px solid #b3b3b3;
 }
 
-.v-ie .mytheme .v-filterselect-nextpage span {
-	background: transparent url(../reindeer/select/img/arrow-down.png) no-repeat center 3px;
+.mytheme .v-progressindicator-small {
+	width: 110px;
 }
 
-.v-ie .mytheme .v-filterselect-prevpage:hover span {
-	background: transparent url(../reindeer/select/img/arrow-up-hover.png) no-repeat center 3px;
+.mytheme .v-progressindicator-small .v-progressindicator-wrapper, .mytheme .v-progressindicator-small .v-progressindicator-indicator {
+	height: 2px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
 }
 
-.v-ie .mytheme .v-filterselect-nextpage:hover span {
-	background: transparent url(../reindeer/select/img/arrow-down-hover.png) no-repeat center 3px;
+.mytheme .v-progressindicator-big {
+	width: 250px;
 }
 
-.v-ie .mytheme .v-filterselect-status {
-	background: transparent url(../reindeer/select/img/status-bg.png) repeat-x;
+.mytheme .v-progressindicator-big .v-progressindicator-wrapper, .mytheme .v-progressindicator-big .v-progressindicator-indicator {
+	height: 14px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
 
-.mytheme .v-filterselect .v-icon {
-	width: 16px;
-	position: relative;
+.mytheme .v-progressindicator-indeterminate.v-progressindicator-big {
+	width: 42px;
+	height: 42px;
+	background: #fff url(../base/common/img/ajax-loader-big.gif) no-repeat 50%;
 }
 
-.mytheme .v-filterselect .v-icon + .v-filterselect-input {
-	margin-left: -16px;
-	padding-left: 18px;
+.mytheme .v-progressindicator-indeterminate.v-disabled {
+	display: none;
 }
 
-.mytheme .black .v-filterselect {
-	background-image: url(../reindeer/select/img/black/left-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.v-progressindicator-bar {
+	display: block;
+	width: 150px;
+	height: 9px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 }
 
-.mytheme.v-app .black .v-filterselect-input, .mytheme .v-window .black .v-filterselect-input, .mytheme .v-window-black .v-filterselect-input, .mytheme .v-popupview-popup .black .v-filterselect-input {
-	color: #c9ccce;
-	background-image: url(../reindeer/select/img/black/center-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.bar.v-progressindicator-small {
+	width: 110px;
+	height: 4px;
 }
 
-.mytheme .black .v-filterselect-focus {
-	background-image: url(../reindeer/select/img/black/left-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.bar.v-progressindicator-big {
+	width: 200px;
+	height: 16px;
 }
 
-.mytheme .black .v-filterselect-focus .v-filterselect-input {
-	background-image: url(../reindeer/select/img/black/center-black-focus.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.bar .v-progressindicator-wrapper {
+	display: block;
+	background: #fff url(../chameleon/img/indeterminate-progress.gif);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
 }
 
-.mytheme .black .v-filterselect-button {
-	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.bar .v-progressindicator-indicator {
+	display: block;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: none;
+	margin: 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
 }
 
-.mytheme .black .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/black/right-black-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+.mytheme .v-progressindicator-indeterminate.bar.v-progressindicator-small .v-progressindicator-indicator {
+	background: transparent;
 }
 
-.mytheme .black .v-filterselect-button:active {
-	background-image: url(../reindeer/select/img/black/right-black-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .black .v-filterselect-focus .v-filterselect-button {
-	background-image: url(../reindeer/select/img/black/right-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .black .v-filterselect-focus .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/black/right-black-focus-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .black .v-filterselect-focus .v-filterselect-button:active {
-	background-image: url(../reindeer/select/img/black/right-black-focus-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .black .v-disabled .v-filterselect-button:hover, .mytheme .black .v-readonly .v-filterselect-button:hover {
-	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
-}
-
-.mytheme .black .v-filterselect-prompt .v-filterselect-input {
-	color: #5f6366;
-}
-
-.mytheme .black .v-select select, .mytheme .black .v-select-twincol select {
-	border-color: #38393a;
-	border-top-color: #2c2d2e;
-	border-bottom-color: #3e3f3f;
-	background: #151717;
-	color: #c9ccce;
+.mytheme .v-progressindicator-indeterminate.bar.v-disabled .v-progressindicator-indicator {
+	background: #fff;
 }
 
 .mytheme .v-slider {
 	border-top: 1px solid #9a9c9e;
 	border-bottom: 1px solid #bdbfc1;
-	margin: 4px 0;
+	margin: 3px 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 
 .mytheme .v-slider-base {
-	height: 1px;
-	background: #e0e2e2;
+	height: 4px;
+	background: #e0e2e2 url(../chameleon/img/grad-dark-top2.png) repeat-x;
 	border-top: 1px solid #adb0b1;
 	border-left: 1px solid #a0a3a6;
 	border-right: 1px solid #a0a3a6;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 }
 
 .mytheme .v-slider-handle {
-	background: transparent;
-	background-image: url(../reindeer/slider/img/knob.png);/** sprite-ref: verticals */
+	background: #c9c9c9 url(../chameleon/img/grad-dark-bottom2.png) repeat-x left bottom;
+	border: 1px solid #b3b3b3;
 	width: 10px;
 	height: 10px;
 	margin-top: -5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
 }
 
 .mytheme .v-slider-handle-active {
-	background-image: url(../reindeer/slider/img/knob-pressed.png);/** sprite-ref: verticals */
+	background-color: #afafaf;
 }
 
 .mytheme .v-slider-vertical {
-	width: 2px;
-	margin: 0 5px;
-	border: none;
-	border-left: 1px solid #9a9c9e;
-	border-right: 1px solid #bdbfc1;
+	width: auto;
+	margin: 0 4px;
+	border-width: 0 1px;
 }
 
 .mytheme .v-slider-vertical .v-slider-base {
-	width: 2px;
-	border-left: 1px solid #adb0b1;
-	border-right: none;
-	border-top: 1px solid #adb0b1;
-	border-bottom: 1px solid #adb0b1;
+	background-image: none;
+	width: 4px;
+	border-width: 1px 1px 0;
 }
 
 .mytheme .v-slider-vertical .v-slider-handle {
 	width: 10px;
 	height: 10px;
+	margin: 0;
 	margin-left: -5px;
 }
 
-.mytheme .v-splitpanel-hsplitter, .mytheme .v-splitpanel-hsplitter-locked {
-	width: 7px;
-	background-repeat: repeat-y;
-	background-image: url(../reindeer/splitpanel/img/hor-bg.png);/** sprite-ref: horizontals; sprite-alignment: repeat */
-}
-
-.mytheme .v-splitpanel-hsplitter div {
-	width: 7px;
-	height: 100%;
-	background: transparent;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	background-image: url(../reindeer/splitpanel/img/hor-handle.png);/** sprite-ref: horizontals; sprite-alignment: center */
-}
-
-.mytheme .v-splitpanel-vsplitter, .mytheme .v-splitpanel-vsplitter-locked {
-	height: 7px;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/splitpanel/img/ver-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+.mytheme .v-splitpanel-hsplitter div, .mytheme .v-splitpanel-vsplitter div {
+	background: transparent url(../chameleon/img/split-handle.png) no-repeat 2px 50%;
+	margin: 0 -1px;
+	width: 9px;
 }
 
 .mytheme .v-splitpanel-vsplitter div {
+	background-position: 50% 2px;
+	margin: -1px 0;
+	width: auto;
+	height: 9px;
+}
+
+.mytheme .v-splitpanel-hsplitter, .mytheme .v-splitpanel-hsplitter-locked {
+	border-style: solid;
+	border-width: 0 1px;
+	border-color: #b0b0b0;
+	width: 7px;
+	background: #b3b3b3 url(../chameleon/img/grad-light-left.png) repeat-y;
+}
+
+.mytheme .v-splitpanel-vsplitter, .mytheme .v-splitpanel-vsplitter-locked {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #b0b0b0;
 	height: 7px;
-	background: transparent;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	background-image: url(../reindeer/splitpanel/img/ver-handle.png);/** sprite-ref: verticals; sprite-alignment: center */
+	background: #b3b3b3 url(../chameleon/img/grad-light-top.png) repeat-x;
 }
 
-.mytheme .blue .v-splitpanel-hsplitter-small, .mytheme .blue .v-splitpanel-hsplitter-small-locked {
-	background: #7c8a91;
-}
-
-.mytheme .black .v-splitpanel-hsplitter-small, .mytheme .black .v-splitpanel-hsplitter-small-locked {
-	background: #4e5253;
-}
-
-.mytheme .v-splitpanel-hsplitter-small, .mytheme .v-splitpanel-hsplitter-small-locked, .mytheme .white .v-splitpanel-hsplitter-small, .mytheme .white .v-splitpanel-hsplitter-small-locked {
+.mytheme.v-app .v-splitpanel-hsplitter-small, .mytheme.v-app .v-splitpanel-hsplitter-small-locked {
 	width: 1px;
-	background: #949698;
+	border: none;
+	background-image: none;
 }
 
-.mytheme .v-splitpanel-vsplitter-small, .mytheme .v-splitpanel-vsplitter-small-locked, .mytheme .white .v-splitpanel-vsplitter-small, .mytheme .white .v-splitpanel-vsplitter-small-locked {
+.mytheme.v-app .v-splitpanel-vsplitter-small, .mytheme.v-app .v-splitpanel-vsplitter-small-locked {
 	height: 1px;
-	background: #949698;
+	border: none;
+	background-image: none;
+	font-size: 1px;
+	line-height: 1px;
 }
 
 .mytheme .v-splitpanel-hsplitter-small div {
-	width: 5px;
+	width: 7px;
 	margin-left: -2px;
 	background: transparent;
 }
 
 .mytheme .v-splitpanel-vsplitter-small div {
-	height: 5px;
+	height: 7px;
 	margin-top: -2px;
 	background: transparent;
+	overflow: hidden;
 }
 
-.mytheme .blue .v-table-header-wrap {
-	border-color: #92a2aa;
+.mytheme .v-table-table {
+	line-height: 1.4;
 }
 
-.mytheme .blue .v-table-body {
-	border-color: #92a2aa;
-	border-top-color: #c2c3c4;
-}
-
-.mytheme .v-table-header-wrap, .mytheme .white .v-table-header-wrap, .mytheme .v-table-footer-wrap, .mytheme .white .v-table-footer-wrap, .mytheme .v-table-header-drag {
-	border-color: #c2c3c4;
-	background: transparent repeat-x;
-	background-image: url(../reindeer/table/img/header-bg-light.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	height: 20px;
-	text-transform: uppercase;
-	font-size: 10px;
-	font-weight: bold;
-	color: #222;
-	text-shadow: #f3f5f8 0 1px 0;
+.mytheme .v-table-header-wrap, .mytheme .v-table-header-drag {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 1.4em;
 	line-height: normal;
-}
-
-.mytheme .v-table-footer-wrap, .mytheme .white .v-table-footer-wrap {
-	text-transform: none;
-	font-size: 12px;
-	font-weight: normal;
-}
-
-.mytheme .v-table-footer td, .mytheme .white .v-table-footer td {
-	border-color: #c2c3c4;
-}
-
-.mytheme .v-table-footer-container {
-	padding-right: 7px;
-}
-
-.mytheme .v-table-header, .mytheme .v-table-footer, .mytheme .v-table-footer table {
-	height: 20px;
 }
 
 .mytheme .v-table-caption-container, .mytheme .v-table-header-drag {
-	padding-top: 4px;
+	padding-top: 0.2em;
 	padding-right: 4px;
-}
-
-.mytheme .v-table-caption-container .v-icon, .mytheme .v-table-header-drag .v-icon {
-	height: 16px;
-	margin: -4px 3px 0 0;
-	vertical-align: middle;
-}
-
-.v-ie .mytheme .v-table-caption-container .v-icon, .v-ie .mytheme .v-table-header-drag .v-icon {
-	margin-top: -3px;
-}
-
-.mytheme .v-table-resizer {
-	height: 20px;
-	width: 2px;
-	background: transparent;
-	border-right: 1px solid #c2c3c4;
-}
-
-.mytheme .v-table-sort-indicator {
-	background: transparent;
-	width: 0px;
-	height: 20px;
-}
-
-.mytheme .v-table-header-cell-asc .v-table-sort-indicator {
-	background: transparent no-repeat right 7px;
-	background-image: url(../reindeer/table/img/asc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
-	width: 16px;
-}
-
-.mytheme .v-table-header-cell-desc .v-table-sort-indicator {
-	background: transparent no-repeat right 7px;
-	background-image: url(../reindeer/table/img/desc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
-	width: 16px;
-}
-
-.mytheme .v-table-body, .mytheme .white .v-table-body {
-	border-color: #c2c3c4;
-	background: #fff;
-}
-
-.mytheme .v-table-cell-content {
-	padding-top: 0;
-	border-right-color: #d3d4d5;
-	vertical-align: top;
-}
-
-.mytheme .v-table-cell-wrapper {
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-
-.mytheme .v-table-row-odd {
-	background: #eff0f1;
-}
-
-.mytheme .v-table-generated-row {
-	background: #dcdee0;
-	text-transform: uppercase;
-	font-size: 10px;
-	font-weight: bold;
-	color: #222;
-	text-shadow: #f3f5f8 0 1px 0;
-	line-height: normal;
-}
-
-.mytheme .v-table-generated-row .v-table-cell-wrapper {
-	padding-top: 4px;
-	padding-bottom: 5px;
-}
-
-.mytheme .v-table-cell-content:last-child {
-	border-right-color: transparent;
-}
-
-.mytheme .v-table .v-selected, .mytheme .black .v-table .v-selected {
-	background: #4d749f url(../reindeer/common/img/sel-bg.png) repeat-x;
-	color: #fff;
-	text-shadow: #3b5a7a 0 1px 0;
-}
-
-.mytheme .v-table .v-selected .v-table-cell-content {
-	border-right-color: #466c90;
-}
-
-.mytheme .v-table-column-selector {
-	width: 16px;
-	height: 20px;
-	margin-top: -20px;
-	background: transparent no-repeat;
-	background-image: url(../reindeer/table/img/col-sel-light.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-table-column-selector:active {
-	background-image: url(../reindeer/table/img/col-sel-light-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-table-focus-slot-left {
-	border-left: 1px solid #222;
-	margin-bottom: -20px;
-	width: auto;
-}
-
-.mytheme .v-table-focus-slot-right {
-	border-right-color: #222;
-	margin-right: 0;
 }
 
 .mytheme .v-table-header-drag {
-	padding-left: 6px;
-	height: 16px;
+	padding-left: 0.3em;
 }
 
-.mytheme .v-table-header-drag img {
-	height: 16px;
-	margin: -3px 3px 0 0;
-}
-
-.mytheme .v-table-scrollposition {
-	width: auto;
+.mytheme .v-table-resizer {
 	background: transparent;
-	border: none;
+	border-right: 1px solid #b3b3b3;
+	padding-left: 1px;
+	height: 1.4em;
 }
 
-.mytheme .v-table-scrollposition span {
-	background: transparent repeat-x;
-	background-image: url(../reindeer/table/img/scroll-indic-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	border: 1px solid #939494;
-	border: none;
-	border-radius-bottomleft: 4px;
-	border-radius-bottomright: 4px;
-	-moz-border-radius-bottomleft: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-webkit-border-bottom-left-radius: 4px;
-	-webkit-border-bottom-right-radius: 4px;
-	height: 13px;
-	padding: 4px 30px;
-	white-space: nowrap;
-	color: #222;
-	text-shadow: #fff 0 1px 0;
-	position: relative;
-	top: 1px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+.mytheme div.v-table-focus-slot-left {
+	background: transparent;
+	border-left: 2px solid #b3b3b3;
+	border-right: none;
+	padding-left: 0;
+	padding-right: 1px;
+	float: left;
+	margin: 0;
 }
 
-.mytheme .v-table-borderless .v-table-scrollposition span {
-	top: 0;
+.mytheme .v-table-row, .mytheme .v-table-row-odd {
+	background: transparent;
+}
+
+.mytheme .v-table-generated-row {
+	background: #c9c9c9;
+}
+
+.mytheme .v-table tr.v-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+}
+
+.mytheme div.v-table-focus-slot-right {
+	background: transparent;
+	border-right: 2px solid #b3b3b3;
+	padding-left: 0;
+	margin: 0;
+}
+
+.mytheme .v-table-column-selector {
+	margin-top: -1.35em;
+}
+
+.mytheme .v-table-cell-content {
+	border-right: none;
+	padding-right: 7px;
+}
+
+.mytheme .v-table-caption-container .v-icon {
+	vertical-align: middle;
+	margin: -0.37em 2px 0 0;
+}
+
+.mytheme .v-table-header-drag .v-icon {
+	vertical-align: middle;
 }
 
 .mytheme .v-contextmenu .v-on, .mytheme .v-contextmenu .v-off {
-	display: inline-block;
-	zoom: 1;
-	background: transparent no-repeat 0 4px;
-	background-image: url(../reindeer/common/icons/bullet.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 4px */
+	display: block;
+	background: transparent url(../chameleon/icons/bullet.png) no-repeat 0 4px;
 	padding-left: 12px;
-	padding-right: 4px;
 }
 
 .mytheme .v-contextmenu .v-off {
@@ -5961,1069 +4726,1165 @@ body .mytheme.v-app .v-app-loading {
 }
 
 .mytheme .v-contextmenu .gwt-MenuItem-selected .v-on {
-	background-image: url(../reindeer/common/icons/bullet-white.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 5px */
+	background-image: url(../chameleon/icons/bullet-white.png);
 }
 
-.mytheme .v-table-strong .v-table-header-wrap, .mytheme .v-table-strong .v-table-header-drag {
-	border-color: #2b3033;
-	border-top-color: #2b3033;
-	background-image: url(../reindeer/table/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #e7e9ea;
-	text-shadow: #000 0 -1px 0;
+.mytheme .v-table-scrollposition {
+	font-size: 11.7px;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
 }
 
-.mytheme .v-table-strong .v-table-body {
-	border-top-color: #2b3033;
+.mytheme .v-table-small .v-table-caption-container, .mytheme .v-table-small .v-table-body {
+	font-size: 11.05px;
 }
 
-.mytheme .v-table-strong .v-table-resizer {
-	border-right-color: #1c1f21;
+.mytheme .v-table-small .v-table-resizer, .mytheme .v-table-small .v-table-header-wrap {
+	height: 1.2em;
 }
 
-.mytheme .v-table-strong .v-table-header-cell-asc .v-table-sort-indicator {
-	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+.mytheme .v-table-small .v-table-column-selector {
+	margin-top: -1.2em;
 }
 
-.mytheme .v-table-strong .v-table-header-cell-desc .v-table-sort-indicator {
-	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+.mytheme .v-table-big .v-table-caption-container, .mytheme .v-table-big .v-table-body {
+	font-size: 15.6px;
 }
 
-.mytheme .v-table-strong .v-table-column-selector {
-	background-image: url(../reindeer/table/img/col-sel.png);/** sprite-ref: verticals */
+.mytheme .v-table-big .v-table-caption-container {
+	padding-top: 0.3em;
 }
 
-.mytheme .v-table-strong .v-table-column-selector:active {
-	background-image: url(../reindeer/table/img/col-sel-pressed.png);/** sprite-ref: verticals */
+.mytheme .v-table-big .v-table-resizer, .mytheme .v-table-big .v-table-header-wrap {
+	height: 1.8em;
 }
 
-.mytheme .v-table-strong .v-table-focus-slot-left, .mytheme .v-table-strong .v-table-focus-slot-right {
-	border-color: #9ca1a5;
+.mytheme .v-table-big .v-table-column-selector {
+	margin-top: -1.5em;
 }
 
-.mytheme .black .v-table-header-wrap, .mytheme .black .v-table-header-drag {
-	border-color: #252729;
-	background-image: url(../reindeer/table/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-	color: #e7eaee;
-	text-shadow: #000 0 -1px 0;
+.mytheme .v-table-striped .v-table-row-odd {
+	background-color: #e6e6e6;
 }
 
-.mytheme .black .v-table-resizer {
-	border-right-color: #252729;
-}
-
-.mytheme .black .v-table-header-cell-asc .v-table-sort-indicator {
-	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
-}
-
-.mytheme .black .v-table-header-cell-desc .v-table-sort-indicator {
-	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
-}
-
-.mytheme .black .v-table-column-selector {
-	background-image: url(../reindeer/table/img/col-sel-black.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-table-column-selector:active {
-	background-image: url(../reindeer/table/img/col-sel-black-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .black .v-table-focus-slot-left, .mytheme .black .v-table-focus-slot-right {
-	border-color: #9ca1a5;
-}
-
-.mytheme .black .v-table-body {
-	border-color: #252729;
-	background: transparent;
-}
-
-.mytheme .black .v-table-cell-content {
-	border-right-color: #252729;
-	border-bottom: 1px solid #252729;
-}
-
-.mytheme .black .v-table-cell-wrapper {
-	padding-bottom: 2px;
-}
-
-.mytheme .black .v-table-row-odd {
-	background: transparent;
-}
-
-.mytheme .black .v-table .v-selected .v-table-cell-content {
-	border-bottom: 1px solid #4d749f;
+.mytheme .v-table-strong .v-table-caption-container {
+	font-weight: bold;
 }
 
 .mytheme .v-table-borderless .v-table-header-wrap, .mytheme .v-table-borderless .v-table-body {
 	border: none;
 }
 
-.mytheme .v-tabsheet-tabitemcell, .mytheme .v-tabsheet-spacertd {
-	height: 32px;
-}
-
-.mytheme .v-tabsheet-tabitemcell {
-	background: no-repeat;
-	background-image: url(../reindeer/tabsheet/img/framed/tab-left.png);/** sprite-ref: verticals */
-	padding-left: 3px;
-}
-
-.mytheme .v-tabsheet-tabitemcell-first {
-	padding-left: 10px;
-	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitem, .mytheme .v-tabsheet-spacertd div {
-	border: none;
-	height: 32px;
-	background: transparent repeat-x;
-	background-image: url(../reindeer/tabsheet/img/framed/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	padding: 0;
-	color: #222;
-	text-shadow: #fff 0 1px 0;
-}
-
-.mytheme .v-tabsheet-tabitem .v-caption {
-	border: none;
-	height: 23px;
-	background: no-repeat right top;
-	background-image: url(../reindeer/tabsheet/img/framed/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
-	padding: 9px 8px 0 6px;
-}
-
-.mytheme .v-tabsheet-tabitem .v-caption-closable {
-	padding-right: 0;
-	padding-left: 17px;
-}
-
-.mytheme .v-tabsheet-tabitem .v-captiontext {
-	height: 16px;
-	line-height: 16px;
-	vertical-align: baseline;
-}
-
-.mytheme .v-tabsheet-caption-close {
-	float: right;
-	width: 19px;
-	height: 18px;
-	margin: -1px -1px 0;
-	padding-left: 2px;
-	background: transparent;
-	background-image: url(../reindeer/tabsheet/img/close-btn.png);/** sprite-ref: verticals */
-	cursor: default;
-	text-indent: -999px;
-	overflow: hidden;
-	font-size: 14px;
-	font-weight: normal;
-}
-
-.v-ff .mytheme .v-tabsheet-caption-close {
-	margin-top: -17px;
-}
-
-.v-ff .mytheme .v-tabsheet-caption-close:only-child {
-	margin-top: -1px;
-}
-
-.mytheme .v-tabsheet-caption-close:hover {
-	background-image: url(../reindeer/tabsheet/img/close-btn-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-caption-close:active {
-	background-image: url(../reindeer/tabsheet/img/close-btn-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
-	background-image: url(../reindeer/tabsheet/img/close-btn-sel.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
-	background-image: url(../reindeer/tabsheet/img/close-btn-sel-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
-	background-image: url(../reindeer/tabsheet/img/close-btn-sel-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitemcell-selected {
-	background-image: url(../reindeer/tabsheet/img/framed/tab-left-sel.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitemcell-selected-first {
-	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabitem-selected {
-	background-image: url(../reindeer/tabsheet/img/framed/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #232930;
-}
-
-.mytheme .v-tabsheet-tabitem-selected .v-caption {
-	background-image: url(../reindeer/tabsheet/img/framed/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
-}
-
-.mytheme .v-tabsheet-spacertd div {
-	margin-right: 4px;
-}
-
-.mytheme .v-tabsheet-spacertd {
-	background: transparent no-repeat right top;
-	background-image: url(../reindeer/tabsheet/img/framed/tab-spacer-right.png);/** sprite-ref: verticals; sprite-alignment: right */
-}
-
-.mytheme .blue .v-tabsheet-content {
-	border-color: #a8bcc5;
-}
-
-.mytheme .v-tabsheet-content, .mytheme .white .v-tabsheet-content {
-	border: 1px solid #dcdcdc;
-	border-bottom: none;
-	border-top: none;
-	color: #222;
-	text-shadow: none;
-}
-
-.mytheme .v-tabsheet-tabsheetpanel {
-	background: #fff;
-}
-
-.v-sa .mytheme .v-tabsheet-content {
-	border-color: rgba(0, 0, 0, 0.1);
-}
-
-.mytheme .blue .v-tabsheet-deco {
-	border-color: #92a3ac;
-	background: #adc2cd;
-}
-
-.mytheme .v-tabsheet-deco, .mytheme .white .v-tabsheet-deco {
-	height: 1px;
-	border-top: 1px solid #bebebe;
-	background: #e2e2e2;
-	overflow: hidden;
-}
-
-.v-sa .mytheme .v-tabsheet-deco {
-	border-top-color: rgba(0, 0, 0, 0.1);
-	background: rgba(0, 0, 0, 0.08);
-}
-
-.mytheme .v-tabsheet-tabs .v-icon, .mytheme .v-tabsheet-tabs .v-captiontext, .mytheme .v-tabsheet-tabs .v-errorindicator {
-	display: inline;
-	float: none;
-}
-
-.v-sa .mytheme .v-tabsheet-tabs .v-captiontext {
-	display: inline-block;
-}
-
-.v-sa .mytheme .v-tabsheet-tabs .v-icon {
-	vertical-align: top;
-}
-
-.mytheme .v-tabsheet-tabs .v-icon {
-	width: 16px !important;
-	height: 16px !important;
-}
-
-.mytheme .v-tabsheet-tabs .v-errorindicator {
-	display: inline-block;
-	width: 13px;
-	height: 16px;
-	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
-}
-
-.v-ie .mytheme .v-tabsheet-tabs .v-errorindicator {
-	zoom: 1;
-	display: inline-block;
-}
-
-.mytheme .v-tabsheet-scroller {
-	height: 31px;
-	margin-top: -31px;
-	padding: 0 3px 0 4px;
-	border-right: 1px solid #c2c2c2;
-	border-left: 1px solid #cfcfcf;
-	position: relative;
-	float: right;
-	background: transparent url(../reindeer/tabsheet/img/framed/tab-bg.png) repeat-x left -1px;
-	width: 36px;
-}
-
-.mytheme .v-tabsheet-scroller button {
-	margin-top: 7px;
-}
-
-.mytheme .v-tabsheet-scrollerPrev, .mytheme .v-tabsheet-scrollerNext, .mytheme .v-tabsheet-scrollerPrev-disabled, .mytheme .v-tabsheet-scrollerNext-disabled {
-	border: none;
-	background: transparent;
-	background-image: url(../reindeer/tabsheet/img/tab-prev.png);/** sprite-ref: verticals */
-	width: 18px;
-	height: 17px;
-	overflow: hidden;
-}
-
-.mytheme .v-tabsheet-scroller button::-moz-focus-inner {
-	border: none;
-}
-
-.mytheme .v-tabsheet-scrollerNext {
-	background-image: url(../reindeer/tabsheet/img/tab-next.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-scrollerPrev:active {
-	background-image: url(../reindeer/tabsheet/img/tab-prev-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-scrollerNext:active {
-	background-image: url(../reindeer/tabsheet/img/tab-next-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-scrollerPrev-disabled, .mytheme .v-tabsheet-scrollerPrev-disabled:active {
-	background-image: url(../reindeer/tabsheet/img/tab-prev-disabled.png);/** sprite-ref: verticals */
-	opacity: 1;
-	filter: none;
-}
-
-.mytheme .v-tabsheet-scrollerNext-disabled, .mytheme .v-tabsheet-scrollerNext-disabled:active {
-	background-image: url(../reindeer/tabsheet/img/tab-next-disabled.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
-	opacity: 1;
-	filter: none;
-}
-
-.mytheme .v-tabsheet-borderless .v-tabsheet-tabitemcell-first {
-	padding-left: 7px;
-	background: url(../reindeer/tabsheet/img/framed/tab-first-left.png) no-repeat -3px 0;
-}
-
-.mytheme .v-tabsheet-borderless .v-tabsheet-tabitemcell-selected-first {
-	background: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png) no-repeat -3px 0;
-}
-
-.mytheme .v-tabsheet-borderless .v-tabsheet-spacertd div {
-	margin-right: 0;
-}
-
-.mytheme .v-tabsheet-borderless .v-tabsheet-spacertd {
+.mytheme div.v-table-borderless .v-table-body {
 	background: transparent;
 }
 
-.mytheme .v-tabsheet-borderless .v-tabsheet-content {
-	border: none;
-}
-
-.mytheme .v-tabsheet-borderless .v-tabsheet-deco {
-	height: 0;
-	border-top: none;
-}
-
-.mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
-	border-color: #7c8a91;
-}
-
-.mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
-	color: #7c8a91;
-}
-
-.mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
-	color: #BCD3DE;
-	background: #778d98;
-}
-
-.mytheme .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
-	background: #4f6874;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .mytheme .white .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div {
-	border-bottom: 1px solid #bfbfbf;
-	height: auto;
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell, .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-spacertd {
-	height: auto;
-	background: transparent;
-	padding-left: 0;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .mytheme .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem {
-	border: none;
-	border-bottom: 1px solid #bfbfbf;
-	color: #4d748f;
-	padding: 0;
-	height: auto;
-	background: transparent;
-	text-shadow: none;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption {
-	padding: 5px 16px;
-	height: auto;
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell-selected {
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected, .mytheme .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
-	background: transparent;
-	border: 1px solid #bfbfbf;
-	border-bottom: none;
-	color: #222;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption {
-	background: transparent;
-	padding: 4px 15px 6px 15px;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption-closable, .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption-closable {
-	padding-right: 6px;
-}
-
-.mytheme .v-tabsheet-content-minimal, .mytheme .white .v-tabsheet-content-minimal {
-	border: none;
-}
-
-.mytheme .v-tabsheet-content-minimal .v-tabsheet-tabsheetpanel {
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-deco-minimal, .mytheme .white .v-tabsheet-deco-minimal {
-	height: 0;
-	border: none;
-}
-
-.mytheme .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller {
-	margin-top: -20px;
-	height: 17px;
-	padding: 0;
-	border: none;
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller button {
-	margin-top: 0;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-caption-close, .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
-	text-indent: 0;
-	background: transparent;
-	margin-left: 3px;
-	margin-right: -3px;
-	padding: 0;
-	color: #999;
-	width: 14px;
-	height: 14px;
-	line-height: 14px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-}
-
-.v-ie9 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie9 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie9 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active, .v-ie10 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie10 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie10 .mytheme .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active {
-	margin-left: 2.5px;
-	margin-top: 1px;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .mytheme .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
-	color: #fff;
-	background: #aaa;
-}
-
-.mytheme .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active, .mytheme .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
-	background: #777;
-}
-
-.mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
-	border-color: #3e4044;
-	color: #6a7f89;
-}
-
-.mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
-	color: #c9ccce;
-}
-
-.mytheme .black .v-tabsheet-content-minimal, .mytheme .black .v-tabsheet-content-bar {
-	color: #c9ccce;
-	text-shadow: #000 0 0 1px;
-}
-
-.mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
-	color: #72787c;
-}
-
-.mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
-	color: #1d2021;
-	background: #4d5154;
-}
-
-.mytheme .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
-	background: #626669;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell, .mytheme .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
-	height: 20px;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell {
-	background-image: url(../reindeer/tabsheet/img/bar/tab-left.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-first {
-	padding-left: 6px;
-	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem, .mytheme .v-tabsheet-tabs-bar .v-tabsheet-spacertd div {
-	height: 20px;
-	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	margin: 0;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption {
-	font-size: 11px;
-	height: 18px;
-	background-image: url(../reindeer/tabsheet/img/bar/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
-	padding: 2px 12px 0 10px;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption-closable, .mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption-closable {
-	padding-right: 8px;
-	padding-left: 14px;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close, .mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover, .mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
-	text-indent: 0;
-	background: transparent;
-	margin-left: 3px;
-	margin-right: -3px;
-	padding: 1px 0 0 1px;
-	color: #3c3c3c;
-	width: 13px;
-	height: 13px;
-	line-height: 12px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
-	margin-top: 1px;
-}
-
-.v-ff .mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
-	margin-top: -14px;
-}
-
-.v-ie9 .mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie9 .mytheme .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close, .v-ie10 .mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie10 .mytheme .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close {
-	margin-top: -14px;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover {
-	background: #bfbfbf;
-	-webkit-box-shadow: 0 1px 0 #fff;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
-	background: #a9a9a9;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
-	color: #404142;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
-	background: #5e666e;
-	color: #fff;
-	text-shadow: 0 -1px 0 #222;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
-	background: #404142;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected {
-	background-image: url(../reindeer/tabsheet/img/bar/tab-left-sel.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected-first {
-	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left-sel.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected {
-	background-image: url(../reindeer/tabsheet/img/bar/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	color: #232930;
-}
-
-.mytheme .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption {
-	background-image: url(../reindeer/tabsheet/img/bar/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
-}
-
-.mytheme .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller {
-	margin-top: -20px;
-	height: 19px;
-	border-right: none;
-	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller button {
-	margin-top: 1px;
-}
-
-.mytheme .v-tabsheet-content-bar, .mytheme .white .v-tabsheet-content-bar {
-	border: none;
-}
-
-.mytheme .v-tabsheet-content-bar .v-tabsheet-tabsheetpanel {
-	background: transparent;
-}
-
-.mytheme .v-tabsheet-deco-bar, .mytheme .white .v-tabsheet-deco-bar {
-	height: 0;
-	border: none;
-}
-
-.mytheme .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem .v-tabsheet-caption-close, .mytheme .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
-	visibility: hidden;
-}
-
-.mytheme .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close, .mytheme .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected:hover .v-tabsheet-caption-close {
-	visibility: visible;
-}
-
-.mytheme .v-tabsheet-tabs-hover-closable .v-tabsheet-caption-close {
-	visibility: hidden;
-}
-
-.mytheme .v-tabsheet-tabs-hover-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
-	visibility: visible;
-}
-
-.mytheme .blue .v-textfield, .mytheme .blue .v-textarea {
-	border-color: #92a2aa;
-	border-top-color: #7c8a90;
-	border-bottom-color: #a1b3bc;
-}
-
-.mytheme .v-textfield, .mytheme .v-textarea, .mytheme .white .v-textfield, .mytheme .white .v-textarea {
-	border: 1px solid #bcbdbe;
-	border-top-color: #a2a3a4;
-	border-bottom-color: #d2d3d4;
-	background: #fff;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/textfield/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	margin: 0;
-	height: 23px;
+.mytheme input.v-textfield, .mytheme textarea.v-textarea, .mytheme .v-filterselect {
 	line-height: normal;
+	border: 1px solid #b3b3b3;
+	border-top-color: #808080;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-top-color: rgba(0, 0, 0, 0.5);
+	background: #fff url(../chameleon/img/input-bg.png) repeat-x;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	margin: 0;
 }
 
-.mytheme .v-textarea, .mytheme .white .v-textarea {
-	background-image: none;
-	height: auto;
+.mytheme input.v-textfield[type="text"], .mytheme textarea.v-textarea, .mytheme .v-filterselect {
+	padding-bottom: 0.1em;
+	padding-top: 0.1em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
 }
 
-.mytheme.v-app input.v-textfield, .mytheme .v-window input.v-textfield, .mytheme.v-app textarea.v-textarea, .mytheme .v-window textarea.v-textarea {
-	padding: 3px 3px 4px;
+.mytheme input.v-textfield[type="text"] {
+	height: 1.2em;
 }
 
-.mytheme.v-app input.v-textfield.v-widget, .mytheme .v-window input.v-textfield.v-widget {
-	height: 24px;
+.mytheme input.v-widget.v-textfield[type="text"], .mytheme .v-filterselect {
+	height: 1.7em;
 }
 
-.mytheme.v-app .v-textfield-focus, .mytheme .v-window .v-textfield-focus, .mytheme .v-popupview-popup .v-textfield-focus, .mytheme.v-app .v-textarea-focus, .mytheme .v-window .v-textarea-focus, .mytheme .v-popupview-popup .v-textarea-focus {
-	border-color: #5b97d0;
-	border-top-color: #4f83b4;
-	border-bottom-color: #5ca0df;
-	outline: none;
-	background-color: #fff;
+.mytheme.v-app input.v-textfield, .mytheme.v-app textarea.v-textarea, .mytheme.v-app input.v-filterselect-input {
+	color: #222;
 }
 
-.mytheme input.v-textfield-prompt, .mytheme textarea.v-textarea-prompt {
+.v-ie .mytheme input.v-textfield, .v-ie .mytheme textarea.v-textarea, .v-ie .mytheme .v-filterselect {
+	border-top-color: #808080;
+}
+
+.mytheme.v-app input.v-textfield-prompt, .mytheme.v-app textarea.v-textarea-prompt {
 	font-style: normal;
 	color: #999;
 }
 
-.mytheme.v-app input.v-textfield-small {
-	font-size: 11px;
-	line-height: normal;
-	height: auto;
-	padding: 2px;
+.mytheme input.v-textfield-focus, .mytheme textarea.v-textarea-focus {
+	background-color: #fffce1;
 }
 
-.mytheme.v-app textarea.v-textarea-small {
-	font-size: 11px;
-}
-
-.mytheme.v-app .v-table input.v-textfield.v-widget, .mytheme .v-window .v-table input.v-textfield.v-widget {
-	padding: 1px 2px;
-	height: auto;
-	line-height: normal;
-}
-
-.mytheme .v-table-cell-wrapper > input.v-textfield {
-	margin-top: -2px;
-	margin-bottom: -2px;
-}
-
-.mytheme .black .v-textfield, .mytheme .black .v-textarea {
-	border-color: #38393a;
-	border-top-color: #2c2d2e;
-	border-bottom-color: #3e3f3f;
-	background: #151717;
-	background-image: url(../reindeer/textfield/img/bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
-	color: #c9ccce;
-	text-shadow: #000 0 0 1px;
-}
-
-.mytheme .black .v-textarea {
-	background-image: none;
-}
-
-.mytheme.v-app .black .v-textfield-focus, .mytheme .v-window-black .v-textfield-focus, .mytheme .v-window .black .v-textfield-focus, .mytheme .v-popupview-popup .black .v-textfield-focus, .mytheme.v-app .black .v-textarea-focus, .mytheme .v-window-black .v-textarea-focus, .mytheme .v-window .black .v-textarea-focus, .mytheme .v-popupview-popup .black .v-textarea-focus {
-	border-color: #4b7192;
-	border-top-color: #3b5a75;
-	border-bottom-color: #507596;
-	background-color: #151717;
-}
-
-.mytheme .black input.v-textfield-prompt {
-	color: #5f6366;
-}
-
-.mytheme input.v-textfield-readonly, .mytheme .black input.v-textfield-readonly, .mytheme textarea.v-textarea-readonly, .mytheme .black textarea.v-textarea-readonly {
+.mytheme input.v-textfield-readonly, .mytheme textarea.v-textarea-readonly {
 	border: none;
 	background: transparent;
 }
 
-.mytheme .v-tree-node {
-	background: transparent url(../reindeer/tree/img/arrows.png) no-repeat 6px -10px;
+.mytheme.v-app input.v-textfield-small, .mytheme.v-app textarea.v-textarea-small, .mytheme .v-filterselect-small .v-filterselect-input {
+	font-size: 11.05px;
 }
 
-.mytheme .v-tree-node-expanded {
-	background-position: -7px 5px;
+.mytheme.v-app input.v-textfield-big, .mytheme.v-app textarea.v-textarea-big, .mytheme .v-filterselect-big .v-filterselect-input {
+	font-size: 15.6px;
+}
+
+.mytheme input.v-textfield-big[type=text], .mytheme .v-datefield-big input.v-datefield-textfield[type=text] {
+	padding: 0.3em;
+}
+
+.mytheme textarea.v-textarea, .mytheme .v-filterselect-big {
+	padding: 0.3em;
+}
+
+.mytheme input.v-textfield-big.v-textfield-search, .mytheme .v-filterselect-search.v-filterselect-big {
+	background-image: url(../chameleon/img/magnifier-big.png);
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+}
+
+.mytheme input.v-textfield-big.v-textfield-search[type=text] {
+	padding-left: 26px;
+}
+
+.mytheme .v-filterselect-search.v-filterselect-big {
+	padding-left: 26px;
+}
+
+.mytheme input.v-textfield-search, .mytheme .v-filterselect-search {
+	background-image: url(../chameleon/img/magnifier.png);
+	background-repeat: no-repeat;
+	background-position: 3px 50%;
+}
+
+.mytheme input.v-textfield-search[type=text], .mytheme .v-filterselect-search {
+	padding-left: 17px;
+}
+
+.mytheme .v-datefield-button {
+	background: #dadada url(../chameleon/img/date-btn.png) repeat-x 50% 0;
+	border: 1px solid gray;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	width: 25px;
+	margin-right: -25px;
+	height: 1.7em;
+	padding: 0.2em 0;
+}
+
+.mytheme input.v-datefield-textfield[type="text"] {
+	border-right: none;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	height: 1.7em;
+}
+
+.mytheme .v-datefield-big .v-datefield-button {
+	padding: 0.3em 0;
+	height: 1.9em;
+	width: 32px;
+	background-image: url(../chameleon/img/date-btn-big.png);
+	font-size: 15.6px;
+}
+
+.mytheme .v-datefield-big input.v-datefield-textfield[type="text"] {
+	height: 1.9em;
+	font-size: 15.6px;
+}
+
+.mytheme .v-datefield-small .v-datefield-button {
+	height: 1.6em;
+	width: 19px;
+	background-position: 50% -2px;
+	font-size: 11.05px;
+}
+
+.mytheme .v-datefield-small input.v-datefield-textfield[type="text"] {
+	height: 1.6em;
+	font-size: 11.05px;
+}
+
+.mytheme .v-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+	font-size: 11.7px;
+}
+
+.mytheme .v-datefield-month .v-datefield-textfield {
+	width: 6.4em;
+}
+
+.mytheme .v-datefield-year .v-datefield-textfield {
+	width: 4.4em;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel-prevmonth, .mytheme .v-datefield-year .v-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.mytheme .v-datefield-calendarpanel-header td {
+	border-bottom: 1px solid #666;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel-header td, .mytheme .v-datefield-month .v-datefield-calendarpanel-header td {
+	border-bottom: none;
+}
+
+.mytheme td.v-datefield-calendarpanel-month {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.mytheme span.v-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	line-height: 2em;
+	height: 1.8em;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel-month {
+	width: 5.4em;
+}
+
+.mytheme .v-datefield-month .v-datefield-calendarpanel-month, .mytheme .v-datefield-day .v-datefield-calendarpanel-month, .mytheme .v-datefield-full .v-datefield-calendarpanel-month {
+	width: 9.4em;
+}
+
+.mytheme .v-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 25px;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel {
+	width: 8.4em;
+}
+
+.mytheme td.v-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.mytheme td.v-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.mytheme .v-datefield-calendarpanel-header button {
+	font-size: 13px;
+	line-height: normal;
+	width: 100%;
+	padding: 0 0.8em;
+	height: 1.8em;
+	border: none;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+.mytheme .v-datefield-popup .v-datefield-calendarpanel-month, .mytheme .v-datefield-popup .v-datefield-calendarpanel-header button {
+	background-position: 0 0;
+}
+
+.mytheme .v-datefield-calendarpanel-header button:active {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+}
+
+.mytheme .v-datefield-calendarpanel-prevyear button {
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+}
+
+.mytheme .v-datefield-calendarpanel-nextyear button {
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel-prevyear button, .mytheme .v-datefield-month .v-datefield-calendarpanel-prevyear button {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.mytheme .v-datefield-year .v-datefield-calendarpanel-nextyear button, .mytheme .v-datefield-month .v-datefield-calendarpanel-nextyear button {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.mytheme .v-datefield-calendarpanel-body, .mytheme .v-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.mytheme .v-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.mytheme .v-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.mytheme .v-datefield-calendarpanel-weeknumbers td {
+	width: 12.5%;
+}
+
+.mytheme .v-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	font-size: 10.4px;
+	padding: 0.3em 0.5em 0.35em 0;
+	height: 1.1em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background: #c9c9c9 url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin-bottom: 2px;
+}
+
+.mytheme .v-datefield-calendarpanel .v-first strong {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.mytheme .v-datefield-calendarpanel .v-last strong {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.mytheme .v-datefield-popup .v-datefield-calendarpanel .v-first strong, .mytheme .v-datefield-popup .v-datefield-calendarpanel .v-last strong {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.mytheme .v-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 1.6em;
+}
+
+.mytheme .v-datefield-calendarpanel-weeknumber {
+	padding: 0.5em 0.5em 0.35em 0;
+	font-size: 11.7px;
+}
+
+.mytheme .v-datefield-calendarpanel-day, .mytheme .v-datefield-calendarpanel-day-today {
+	padding: 0.15em 0.5em 0.15em 0;
+	display: block;
+	margin: 1px 1px 1px 0.3em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.mytheme .v-datefield-calendarpanel-day-focused, .mytheme .v-datefield-calendarpanel-day:hover {
+	margin: 0 0 0 0.2em;
+	border: 1px solid #b3b3b3;
+	outline: none;
+}
+
+.mytheme .v-datefield-calendarpanel-day-today {
+	border: none;
+	background: transparent url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin: 0 0 0 0.2em;
+	font-weight: bold;
+	border: 1px solid #c9c9c9;
+}
+
+.mytheme .v-datefield-calendarpanel-day-selected, .mytheme .v-datefield-calendarpanel-day-selected:hover {
+	margin: 0 0 0 0.3em;
+	border: none;
+}
+
+.mytheme .v-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11.7px;
+	margin: 0;
+}
+
+.mytheme .v-inline-datefield-button {
+	background: #dadada url(../chameleon/img/date-btn.png) repeat-x 50% 0;
+	border: 1px solid gray;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	width: 25px;
+	margin-right: -25px;
+	height: 1.7em;
+	padding: 0.2em 0;
+}
+
+.mytheme input.v-inline-datefield-textfield[type="text"] {
+	border-right: none;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	height: 1.7em;
+}
+
+.mytheme .v-inline-datefield-big .v-inline-datefield-button {
+	padding: 0.3em 0;
+	height: 1.9em;
+	width: 32px;
+	background-image: url(../chameleon/img/date-btn-big.png);
+	font-size: 15.6px;
+}
+
+.mytheme .v-inline-datefield-big input.v-inline-datefield-textfield[type="text"] {
+	height: 1.9em;
+	font-size: 15.6px;
+}
+
+.mytheme .v-inline-datefield-small .v-inline-datefield-button {
+	height: 1.6em;
+	width: 19px;
+	background-position: 50% -2px;
+	font-size: 11.05px;
+}
+
+.mytheme .v-inline-datefield-small input.v-inline-datefield-textfield[type="text"] {
+	height: 1.6em;
+	font-size: 11.05px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+	font-size: 11.7px;
+}
+
+.mytheme .v-inline-datefield-month .v-inline-datefield-textfield {
+	width: 6.4em;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-textfield {
+	width: 4.4em;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-header td {
+	border-bottom: 1px solid #666;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-header td, .mytheme .v-inline-datefield-month .v-inline-datefield-calendarpanel-header td {
+	border-bottom: none;
+}
+
+.mytheme td.v-inline-datefield-calendarpanel-month {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.mytheme span.v-inline-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	line-height: 2em;
+	height: 1.8em;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
+	width: 5.4em;
+}
+
+.mytheme .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .mytheme .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .mytheme .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
+	width: 9.4em;
+}
+
+.mytheme .v-inline-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 25px;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel {
+	width: 8.4em;
+}
+
+.mytheme td.v-inline-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.mytheme td.v-inline-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-header button {
+	font-size: 13px;
+	line-height: normal;
+	width: 100%;
+	padding: 0 0.8em;
+	height: 1.8em;
+	border: none;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+.mytheme .v-inline-datefield-popup .v-inline-datefield-calendarpanel-month, .mytheme .v-inline-datefield-popup .v-inline-datefield-calendarpanel-header button {
+	background-position: 0 0;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-header button:active {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+}
+
+.mytheme .v-inline-datefield-calendarpanel-prevyear button {
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-nextyear button {
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevyear button, .mytheme .v-inline-datefield-month .v-inline-datefield-calendarpanel-prevyear button {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.mytheme .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextyear button, .mytheme .v-inline-datefield-month .v-inline-datefield-calendarpanel-nextyear button {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-body, .mytheme .v-inline-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-weeknumbers td {
+	width: 12.5%;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	font-size: 10.4px;
+	padding: 0.3em 0.5em 0.35em 0;
+	height: 1.1em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background: #c9c9c9 url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin-bottom: 2px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel .v-first strong {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel .v-last strong {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.mytheme .v-inline-datefield-popup .v-inline-datefield-calendarpanel .v-first strong, .mytheme .v-inline-datefield-popup .v-inline-datefield-calendarpanel .v-last strong {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 1.6em;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-weeknumber {
+	padding: 0.5em 0.5em 0.35em 0;
+	font-size: 11.7px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-day, .mytheme .v-inline-datefield-calendarpanel-day-today {
+	padding: 0.15em 0.5em 0.15em 0;
+	display: block;
+	margin: 1px 1px 1px 0.3em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-day-focused, .mytheme .v-inline-datefield-calendarpanel-day:hover {
+	margin: 0 0 0 0.2em;
+	border: 1px solid #b3b3b3;
+	outline: none;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-day-today {
+	border: none;
+	background: transparent url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin: 0 0 0 0.2em;
+	font-weight: bold;
+	border: 1px solid #c9c9c9;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-day-selected, .mytheme .v-inline-datefield-calendarpanel-day-selected:hover {
+	margin: 0 0 0 0.3em;
+	border: none;
+}
+
+.mytheme .v-inline-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11.7px;
+	margin: 0;
+}
+
+.mytheme .v-inline-datefield, .mytheme .v-inline-datefield-calendarpanel-day {
+	line-height: 16px;
+}
+
+.mytheme .v-filterselect {
+	overflow: hidden;
+	padding-right: 16px;
+}
+
+.mytheme.v-app input.v-filterselect-input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	line-height: normal;
+}
+
+.mytheme.v-app input.v-filterselect-input[type=text] {
+	padding: 0;
+}
+
+.mytheme .v-filterselect-focus .v-filterselect-input, .mytheme .v-filterselect .v-filterselect-input:focus {
+	outline: none;
+}
+
+.mytheme .v-filterselect-big.v-filterselect-search {
+	padding-left: 22px;
+}
+
+.mytheme .v-filterselect-button {
+	width: 16px;
+	margin-right: -16px;
+	height: 1.2em;
+	background-position: -5px -11px;
+	opacity: 0.4;
+}
+
+.mytheme .v-filterselect-button:hover {
+	opacity: 0.7;
+}
+
+.mytheme .v-filterselect-button:active {
+	opacity: 1;
+}
+
+.mytheme .v-filterselect-small .v-filterselect-button {
+	height: 0.95em;
+	background-position: -5px -12px;
+}
+
+.mytheme .v-filterselect-suggestpopup {
+	margin-top: 0.4em;
+}
+
+.mytheme .v-filterselect-suggestmenu tr {
+	line-height: 1.4em;
+}
+
+.mytheme.v-app .v-filterselect-suggestpopup-small td {
+	font-size: 11.05px;
+}
+
+.mytheme.v-app .v-filterselect-suggestpopup-big td {
+	font-size: 14.3px;
+}
+
+.mytheme .v-filterselect-big .v-filterselect-button {
+	height: 1.4em;
+	background-position: -5px -9px;
+}
+
+.mytheme .v-filterselect-search .v-filterselect-button {
+	width: 0;
+	overflow: hidden;
+}
+
+.mytheme .v-filterselect-prompt .v-filterselect-input {
+	font-style: normal;
+}
+
+.mytheme .v-filterselect-prevpage-off, .mytheme .v-filterselect-nextpage-off, .mytheme .v-filterselect-prevpage, .mytheme .v-filterselect-nextpage {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #b3b3b3;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.mytheme .v-filterselect-prevpage:active, .mytheme .v-filterselect-nextpage:active {
+	background-image: #c9c9c9 url(../chameleon/img/grad-dark-bottom2.png);
+	background-position: left bottom;
+}
+
+.mytheme .v-filterselect-prevpage-off span, .mytheme .v-filterselect-nextpage-off span, .mytheme .v-filterselect-prevpage span, .mytheme .v-filterselect-nextpage span {
+	display: block;
+	text-indent: -9999px;
+	height: 12px;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 50% 3px;
+}
+
+.mytheme .v-filterselect-nextpage-off span, .mytheme .v-filterselect-nextpage span {
+	background-position: 50% -12px;
+}
+
+.mytheme .v-filterselect-status {
+	font-size: 11.05px;
+	margin: 1px 0 -3px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.mytheme .v-filterselect-suggestmenu .gwt-menuItem-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+}
+
+.mytheme .v-filterselect-suggestpopup-small .v-filterselect-status {
+	font-size: 10.4px;
+}
+
+.mytheme .v-filterselect-suggestpopup-big .v-filterselect-status {
+	font-size: 11.7px;
+}
+
+.mytheme .v-select-small .v-select-select {
+	font-size: 10.4px;
+}
+
+.mytheme .v-select-big .v-select-select {
+	font-size: 15.6px;
+}
+
+.mytheme .v-filterselect-select-button {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	position: relative;
+	padding: 0.3em 0.5em;
+}
+
+.mytheme .v-filterselect-select-button .v-filterselect-input {
+	display: block;
+	width: 100% !important;
+	user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.mytheme .v-filterselect-select-button .v-filterselect-button {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-position: 100% -8px;
+}
+
+.mytheme .v-tabsheet-spacertd div {
+	border-color: #b3b3b3;
+	border-left: none;
+}
+
+.mytheme .v-tabsheet-tabitem {
+	border: none;
+	border-bottom: 1px solid #b3b3b3;
+	padding: 0;
+}
+
+.mytheme .v-tabsheet-tabitem .v-caption {
+	padding: 0.2em 0.8em;
+	margin: 1px;
+	margin-bottom: 0;
+}
+
+.mytheme .v-tabsheet-tabitem-selected {
+	background-color: #c9c9c9;
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	overflow: hidden;
+}
+
+.mytheme .v-tabsheet-tabitem-selected .v-caption {
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	margin: 0;
+	padding-bottom: 0.25em;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+}
+
+.mytheme .v-tabsheet-content {
+	background: #fff;
+	border-color: #b3b3b3;
+}
+
+.mytheme .v-tabsheet-deco {
+	height: 0;
+	background: transparent;
+	border-top: 1px solid #b3b3b3;
+}
+
+.mytheme .v-tabsheet-caption-close {
+	width: 14px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -50px;
+	background: transparent url(../chameleon/img/close-btn.png) no-repeat 0.5em 0;
+	vertical-align: middle;
+	padding: 0 0 0 0.5em;
+	margin: 0.2em 0 0 0;
+}
+
+.mytheme .v-tabsheet-caption-close:hover {
+	background-position: 0.5em -25px;
+}
+
+.mytheme .v-tabsheet-caption-close:active {
+	background-position: 0.5em -50px;
+}
+
+.mytheme .v-tabsheet-scroller {
+	height: 14px;
+	margin-top: -1.6em;
+	position: relative;
+	float: right;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.mytheme .v-tabsheet-scrollerPrev, .mytheme .v-tabsheet-scrollerNext, .mytheme .v-tabsheet-scrollerPrev-disabled, .mytheme .v-tabsheet-scrollerNext-disabled, .mytheme .v-tabsheet-scrollerPrev-disabled:active, .mytheme .v-tabsheet-scrollerNext-disabled:active {
+	border: 1px solid #b3b3b3;
+	border-width: 0;
+	background: transparent url(../chameleon/img/tab-arrows.png) no-repeat 6px 50%;
+	width: 16px;
+	height: 14px;
+	overflow: hidden;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.mytheme .v-tabsheet-scroller button::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+.mytheme .v-tabsheet-scrollerNext, .mytheme .v-tabsheet-scrollerNext-disabled, .mytheme .v-tabsheet-scrollerNext-disabled:active {
+	background-position: -10px 50%;
+	border-left-width: 1px;
+}
+
+.mytheme .v-tabsheet-scrollerPrev:hover, .mytheme .v-tabsheet-scrollerNext:hover {
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+
+.mytheme .v-tabsheet-scrollerPrev:active, .mytheme .v-tabsheet-scrollerNext:active {
+	opacity: 1;
+	filter: none;
+}
+
+.mytheme .v-tabsheet-scrollerPrev-disabled, .mytheme .v-tabsheet-scrollerNext-disabled, .mytheme .v-tabsheet-scrollerPrev-disabled:active, .mytheme .v-tabsheet-scrollerNext-disabled:active {
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+}
+
+.mytheme .v-tabsheet-open-only-closable .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.mytheme .v-tabsheet-open-only-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.mytheme .v-tabsheet-borderless .v-tabsheet-content-borderless, .mytheme .v-tabsheet-deco-borderless {
+	border: none;
+	background: transparent;
+}
+
+.mytheme .v-tabsheet-tabs-borderless .v-tabsheet-tabitem-selected, .mytheme .v-tabsheet-tabs-borderless .v-tabsheet-tabitem-selected .v-caption {
+	background-color: transparent;
 }
 
 .mytheme .v-tree-node-caption {
 	margin-left: 16px;
-	padding-bottom: 1px;
 }
 
 .mytheme .v-tree-node span {
-	padding: 1px 2px;
-	display: inline-block;
-}
-
-.mytheme .v-tree-node-selected span {
-	background: #4d749f repeat-x;
-	background-image: url(../reindeer/common/img/sel-bg.png);
-	color: #fff;
-	padding: 1px 2px;
+	padding: 0.1em 0.3em;
+	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
-	text-shadow: #2b425a 0 1px 0;
-	display: inline-block;
 }
 
 .mytheme .v-tree-node-children {
 	padding-left: 16px;
 }
 
-.mytheme .v-tree-node-caption.v-tree-node-focused span {
-	padding-left: 1px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+.mytheme .v-tree-node-selected span {
+	background-color: #333;
 }
 
-.mytheme .v-tree-node-focused span {
-	border: 1px dotted black;
+.mytheme .v-tree-connectors .v-tree-node-caption {
+	padding-bottom: 1px;
 }
 
-.mytheme .v-tree .v-tree-node-drag-top {
-	background-position: 6px -11px;
-}
-
-.mytheme .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
-	background-position: -7px 4px;
-}
-
-.mytheme .v-tree-connectors .v-tree-node-drag-top, .mytheme .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
-	background-position: 2px -53px;
-}
-
-.mytheme .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
-	background-position: 2px 50%;
-}
-
-.mytheme .v-window {
-	background: transparent;
-}
-
-.mytheme .v-window-wrap {
-	border: 1px solid #808386;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.v-sa .mytheme .v-window-wrap, .v-op .mytheme .v-window-wrap {
-	border-color: rgba(0, 0, 0, 0.2);
-}
-
-.mytheme .v-window-outerheader {
-	padding: 12px 52px 0 14px;
-	height: 37px;
-	background: black repeat-x;
-	background-image: url(../reindeer/window/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-window-header {
-	font-weight: bold;
-	font-size: 12px;
-	line-height: normal;
-	color: #fff;
-	text-shadow: #000 0 -1px 0;
-	white-space: nowrap;
+.mytheme .v-window-closebox, .mytheme .v-window-restorebox, .mytheme .v-window-maximizebox {
+	width: 14px;
+	height: 15px;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	-ms-text-overflow: ellipsis;
+	vertical-align: middle;
+	margin: 0;
+	top: 0.3em;
+	z-index: 2;
 }
 
-.mytheme .v-window-error .v-window-header {
-	padding-left: 13px;
-	background: transparent url(../reindeer/common/icons/error.png) no-repeat 0 50%;
+.mytheme .v-window-closebox:hover, .mytheme .v-window-restorebox:hover, .mytheme .v-window-maximizebox:hover {
+	background-position: 0 -25px;
 }
 
-.mytheme .v-window-resizebox {
-	width: 15px;
-	height: 15px;
-	cursor: se-resize;
-	background: transparent;
-	background-image: url(../reindeer/window/img/resize.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-footer {
-	background-color: white;
-	background-repeat: repeat-x;
-	background-image: url(../reindeer/window/img/footer-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-	height: 15px;
+.mytheme .v-window-closebox:active, .mytheme .v-window-restorebox:active, .mytheme .v-window-maximizebox:active {
+	background-position: 0 -50px;
 }
 
 .mytheme .v-window-closebox {
-	top: 12px;
-	right: 10px;
-	width: 15px;
-	height: 16px;
+	text-indent: -50px;
+	background: transparent url(../chameleon/img/close-btn.png) no-repeat;
+	right: 0.4em;
+}
+
+.mytheme .v-window-restorebox, .mytheme .v-window-maximizebox {
+	right: 1.8em;
+}
+
+.mytheme .v-window-restorebox {
+	background: transparent url(../chameleon/img/restore.png) no-repeat;
+}
+
+.mytheme .v-window-maximizebox {
+	background: transparent url(../chameleon/img/maximize.png) no-repeat;
+}
+
+.mytheme .v-window {
+	background-image: none;
+}
+
+.mytheme .v-window-wrap {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-image: url(../chameleon/img/grad-light-top.png);
+	background-repeat: repeat-x;
+}
+
+.mytheme .v-window-outerheader {
+	padding: 0.2em 1.7em 0.5em 1.2em;
+	height: auto;
+	text-align: center;
+}
+
+.mytheme .v-window-header {
+	font-weight: normal;
+}
+
+.mytheme .v-window-footer {
+	height: 0;
+	position: static;
+}
+
+.mytheme .v-window-resizebox {
+	background: transparent url(../chameleon/img/resize.png) no-repeat;
+	width: 14px;
+	height: 14px;
+	bottom: 0;
+}
+
+.mytheme .v-horizontallayout-segment .v-button {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-left-width: 0;
+	zoom: 1;
+	overflow: visible;
+}
+
+.mytheme .v-horizontallayout-segment .v-button .v-button-wrap {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	zoom: 1;
+}
+
+.mytheme .v-horizontallayout-segment .first {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-left-width: 1px;
+}
+
+.mytheme .v-horizontallayout-segment .first .v-button-wrap {
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.mytheme .v-horizontallayout-segment .last {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.mytheme .v-horizontallayout-segment .last .v-button-wrap {
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.mytheme .sidebar-menu * {
+	white-space: normal;
+}
+
+.mytheme .sidebar-menu .v-label {
+	font-size: 11.05px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	padding: 1em 0.9em 0.3em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.mytheme .sidebar-menu .v-nativebutton {
+	width: 100%;
+	padding: 0.1em 1.1em;
+	border: none;
 	background: transparent;
-	background-image: url(../reindeer/window/img/close.png);/** sprite-ref: verticals */
+	text-align: left;
 }
 
-.mytheme .v-window-closebox:hover {
-	background-image: url(../reindeer/window/img/close-hover.png);/** sprite-ref: verticals */
+.mytheme .sidebar-menu .v-nativebutton:focus {
+	outline: none;
+	font-weight: bold;
 }
 
-.mytheme .v-window-closebox:active {
-	background-image: url(../reindeer/window/img/close-pressed.png);/** sprite-ref: verticals */
+.mytheme .sidebar-menu .tab-selected, .mytheme .sidebar-menu .selected {
+	font-weight: bold;
+	background-color: #333;
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+	color: #fff;
 }
 
-.mytheme .v-window-maximizebox, .mytheme .v-window-restorebox {
-	top: 12px;
-	right: 28px;
-	width: 15px;
-	height: 16px;
-	background: transparent;
+.mytheme .sidebar-menu .tab-selected:focus, .mytheme .sidebar-menu .selected:focus {
+	outline: none;
 }
 
-.mytheme .v-window-maximizebox, .mytheme .v-window-maximizebox:hover, .mytheme .v-window-maximizebox:active {
-	background-image: url(../reindeer/window/img/maximize.png);/** sprite-ref: verticals */
+.mytheme .sidebar-menu .v-nativebutton::-moz-focus-inner {
+	border: none;
+	padding: 0;
 }
 
-.mytheme .v-window-restorebox, .mytheme .v-window-restorebox:hover, .mytheme .v-window-restorebox:active {
-	background-image: url(../reindeer/window/img/restore.png);/** sprite-ref: verticals */
+.mytheme .v-csslayout-toolbar {
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-width: 1px 0;
 }
 
-.mytheme .v-window-contents {
-	background: #fff;
+.mytheme .v-csslayout-toolbar .v-csslayout-margin {
+	margin: 3px 0.3em 2px;
+	padding-bottom: 1px;
+	overflow: hidden;
 }
 
-.mytheme .v-window-modalitycurtain {
-	background: #56595b;
+.mytheme .v-csslayout-toolbar .v-button, .mytheme .v-csslayout-toolbar .segment {
+	margin-right: 2px;
+	float: left;
 }
 
-.mytheme .v-window-light .v-window-outerheader {
-	background: transparent;
-	padding: 15px 52px 0 18px;
+.mytheme .v-csslayout-toolbar .segment .v-button {
+	margin-right: 0;
 }
 
-.mytheme .v-window-light .v-window-header {
-	font-size: 16px;
-	color: #292e34;
+.mytheme.v-app .v-label-error, .mytheme .sidebar-menu .v-label {
 	text-shadow: none;
 }
 
-.mytheme .v-window-light .v-window-resizebox {
-	width: 12px;
-	height: 12px;
-	background-image: url(../reindeer/window/img/light/resize.png);/** sprite-ref: verticals */
+.mytheme div.v-Notification-tray, .mytheme div.v-Notification-error {
+	text-shadow: none;
 }
 
-.mytheme .v-window-light .v-window-footer {
-	background: transparent;
-	height: 12px;
+.mytheme td.v-datefield-calendarpanel-month, .mytheme td.v-inline-datefield-calendarpanel-month {
+	text-shadow: none;
 }
 
-.mytheme .v-window-light .v-window-closebox {
-	right: 1px;
-	top: 17px;
-	width: 19px;
-	height: 15px;
-	background-image: url(../reindeer/window/img/light/close.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-closebox:hover {
-	background-image: url(../reindeer/window/img/light/close-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-closebox:active {
-	background-image: url(../reindeer/window/img/light/close-pressed.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-maximizebox {
-	top: 17px;
-	background-image: url(../reindeer/window/img/light/maximize.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-maximizebox:hover {
-	background-image: url(../reindeer/window/img/light/maximize-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-maximizebox:active {
-	background-image: url(../reindeer/window/img/light/maximize-active.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-restorebox {
-	top: 17px;
-	background-image: url(../reindeer/window/img/light/restore.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-restorebox:hover {
-	background-image: url(../reindeer/window/img/light/restore-hover.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-restorebox:active {
-	background-image: url(../reindeer/window/img/light/restore-active.png);/** sprite-ref: verticals */
-}
-
-.mytheme .v-window-light .v-window-contents {
-	background: transparent;
-}
-
-.mytheme .v-window-light .v-window-wrap {
-	background: #f7f7f8 repeat-x;
-	background-image: url(../reindeer/window/img/light/content-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
-}
-
-.mytheme .v-window-black .v-window-wrap {
-	border-color: #2e3030;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	overflow: hidden;
-}
-
-.v-sa .mytheme .v-window-black .v-window-wrap, .v-op .mytheme .v-window-black .v-window-wrap {
-	border-color: rgba(0, 0, 0, 0.8);
-}
-
-.mytheme .v-window-black .v-window-wrap {
-	background-color: #1d2021;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-}
-
-.v-sa .mytheme .v-window-black .v-window-wrap, .v-op .mytheme .v-window-black .v-window-wrap {
-	background-color: rgba(29, 32, 33, 0.9);
-}
-
-.mytheme .v-window-black .v-window-outerheader {
-	height: 29px;
-	padding: 7px 14px;
-	background: transparent repeat-x;
-	background-image: url(../reindeer/window/img/black/header-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
-	text-align: center;
-	-moz-border-radius-topright: 7px;
-	-moz-border-radius-topleft: 7px;
-	-webkit-border-top-right-radius: 7px;
-	-webkit-border-top-left-radius: 7px;
-	overflow: hidden;
-	border: none;
-}
-
-.mytheme .v-window-black .v-window-header {
-	font-size: 12px;
-	font-weight: normal;
-	color: #dddfe1;
-}
-
-.mytheme .v-window-black .v-window-closebox {
-	top: 8px;
-	background-image: url(../reindeer/window/img/black/close.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-closebox:hover {
-	background-image: url(../reindeer/window/img/black/close-hover.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-closebox:active {
-	background-image: url(../reindeer/window/img/black/close-pressed.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-footer {
-	background: transparent;
-	border: none;
-	height: 14px;
-}
-
-.mytheme .v-window-black .v-window-resizebox {
-	background: transparent no-repeat;
-	background-image: url(../reindeer/window/img/black/resize.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 4px */
-	width: 14px;
-	height: 14px;
-}
-
-.mytheme .v-window-black .v-window-maximizebox {
-	top: 8px;
-	background-image: url(../reindeer/window/img/black/maximize.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-maximizebox:hover {
-	background-image: url(../reindeer/window/img/black/maximize-hover.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-maximizebox:active {
-	background-image: url(../reindeer/window/img/black/maximize-active.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-restorebox {
-	top: 8px;
-	background-image: url(../reindeer/window/img/black/restore.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-restorebox:hover {
-	background-image: url(../reindeer/window/img/black/restore-hover.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-restorebox:active {
-	background-image: url(../reindeer/window/img/black/restore-active.png);/** sprite-ref: black-verticals */
-}
-
-.mytheme .v-window-black .v-window-contents {
-	border: none;
-	background: transparent repeat-x;
-	background-image: url(../reindeer/window/img/black/content-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+.mytheme .v-button, .mytheme .v-slider-feedback, .mytheme .v-disabled.v-button:focus, .mytheme .v-disabled.v-button:active, .mytheme .v-colorpicker-popup .rgb-sliders, .mytheme .v-colorpicker-popup .hsv-sliders, .mytheme .v-panel-bubble .v-panel-caption-bubble, .mytheme .v-datefield-calendarpanel-weekdays strong, .mytheme .v-inline-datefield-calendarpanel-weekdays strong {
+	text-shadow: none;
 }
