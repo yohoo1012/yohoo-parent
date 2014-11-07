@@ -179,15 +179,12 @@
 					<compileReport>false</compileReport>
 					<noServer>true</noServer>
 					<draftCompile>false</draftCompile>
-
 					<style>OBF</style>
 					<strict>true</strict>
 					<runTarget>http://localhost:8080/</runTarget>
 				</configuration>
 				<executions>
 					<execution>
-						<id>install</id>
-						<phase>install</phase>
 						<configuration>
 						</configuration>
 						<goals>

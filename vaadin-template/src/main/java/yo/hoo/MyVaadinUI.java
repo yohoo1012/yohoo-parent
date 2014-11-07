@@ -36,11 +36,6 @@ public class MyVaadinUI extends UI
         Button button = new Button("Click Me1");
         button.addClickListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
-            	try {
-					Thread.sleep(5000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
                 Label label = new Label("Thank you for clicking");
 //                Animator.animate(label, new Css().setProperty("display","none")).ease(Ease.OUT).duration(2000);
 				layout.addComponent(label);
@@ -55,12 +50,12 @@ public class MyVaadinUI extends UI
             	layout.addComponent(label);
             	AnimatorProxy proxy = new AnimatorProxy();
             	layout.addComponent(proxy);
-//            	proxy.animate(label, AnimType.FADE_IN).setDuration(500).setDelay(100);
-//            	proxy.addListener(new AnimationListener() {
-//            	  public void onAnimation(AnimationEvent event) {
-//            	    System.out.println(event.getAnimation());
-//            	  }
-//            	});
+            	proxy.animate(label, AnimType.FADE_IN).setDuration(500).setDelay(100);
+            	proxy.addListener(new AnimationListener() {
+            	  public void onAnimation(AnimationEvent event) {
+            	    System.out.println(event.getAnimation());
+            	  }
+            	});
             }
         });
         layout.addComponent(button);
